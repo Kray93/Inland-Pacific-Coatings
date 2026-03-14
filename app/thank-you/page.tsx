@@ -27,7 +27,7 @@ export default function ThankYouPage() {
             Request Received
           </div>
 
-          <h1 style={{ marginTop: 16 }}>Thank you for reaching out.</h1>
+          <h1 style={{ marginTop: 16 }}>Thank you for reaching out!</h1>
 
           <p
             className="lead"
