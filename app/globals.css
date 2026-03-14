@@ -26,6 +26,7 @@ body {
   color: var(--ink);
   /*font-family: Georgia, "Times New Roman", serif; */
   font-family: Inter, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 a {
