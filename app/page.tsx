@@ -80,7 +80,7 @@ export default function HomePage() {
           <div>
             <div className="badge">Serving Coeur d&apos;Alene, Spokane, and the Inland Northwest</div>
             <h1 style={{ marginTop: 18 }}>
-              Premium epoxy countertops and decorative floors for luxury Northwest living. test
+              Premium epoxy countertops and decorative floors for luxury Northwest living.
             </h1>
             <p className="lead" style={{ marginTop: 22, maxWidth: 760 }}>
               Inland Pacific Coatings creates elevated interior and exterior surfaces with countertop refinishing,
@@ -110,7 +110,7 @@ export default function HomePage() {
 
           <div className="hero-card">
             <div className="logo-frame">
-             /* 
+              {/* 
               <Image
                 src="/ipc-logo.jpg"
                 alt="Inland Pacific Coatings"
@@ -118,8 +118,7 @@ export default function HomePage() {
                 height={700}
                 style={{ maxWidth: "420px", width: "100%", height: "auto" }}
               />
-             */
-              //new code
+             */}
               <Image
                 src="/ipc-logo.jpg"
                 alt="Inland Pacific Coatings"
