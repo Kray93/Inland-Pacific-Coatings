@@ -110,7 +110,13 @@ export default function HomePage() {
 
           <div className="hero-card">
             <div className="logo-frame">
-              <Image src="/ipc-logo.jpg" alt="Inland Pacific Coatings" width={700} height={700} />
+              <Image
+                src="/ipc-logo.jpg"
+                alt="Inland Pacific Coatings"
+                width={700}
+                height={700}
+                style={{ maxWidth: "420px", width: "100%", height: "auto" }}
+              />>
             </div>
             <div style={{ marginTop: 24, borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 20 }}>
               <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>The Inland Pacific Standard</div>
