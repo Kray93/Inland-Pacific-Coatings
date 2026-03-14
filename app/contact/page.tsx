@@ -17,7 +17,7 @@ export default function ContactPage() {
             Tell us about your countertop, floor, garage, or outdoor-surface project. This starter form is ready for a
             future live form integration.
           </p>
-          <p><strong style={{ color: "var(--gold-soft)" }}>Phone:</strong> 208.660.2028</p>
+          <p><strong style={{ color: "var(--gold-soft)" }}>Phone:</strong> 208.714.1951</p>
           <p><strong style={{ color: "var(--gold-soft)" }}>Email:</strong> kevin@ipcepoxy.com</p>
           <p><strong style={{ color: "var(--gold-soft)" }}>Service Area:</strong> Coeur d&apos;Alene, Spokane, and surrounding Inland Northwest communities</p>
         </div>
