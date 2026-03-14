@@ -25,7 +25,6 @@ body {
   background: var(--bg);
   color: var(--ink);
   /*font-family: Georgia, "Times New Roman", serif; */
-  font-family: "trajan-pro-3", serif !important;
 }
 
 a {
@@ -139,22 +138,16 @@ main {
   overflow: hidden; /* THIS FIXES THE CORNERS */
 }
 
-@font-face {
-  font-family: 'Trajan Pro 3';
-  src: url('fonts/trajan-pro-3-semibold.woff2') format('woff2');
-  font-weight: 600; /* Semibold is typically 600 */
-  font-style: normal;
-}
-
 h1, h2, h3 {
   line-height: 1.12;
   margin: 0;
+  font-family: "trajan-pro-3", serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1 {
-  font-family: 'trajan-pro-3', serif; /* Falling back to generic serif */
-  font-weight: 600;
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
 }
 
 h2 {
