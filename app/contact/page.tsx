@@ -25,10 +25,6 @@ export default function ContactPage() {
     setProjects(updated);
   };
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", projects);
-  };
-
   return (
     <main className="section dark-section">
       <div className="container two-col">
