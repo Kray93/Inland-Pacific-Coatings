@@ -219,8 +219,13 @@ p, li {
 }
 
 .btn-secondary {
-  border: 1px solid rgba(255,255,255,0.2);
-  color: white;
+  background: transparent;
+  border: 1px solid var(--gold-soft);
+  color: var(--gold-soft);
+}
+
+.btn-secondary:hover {
+  background: rgba(201, 162, 63, 0.08);
 }
 
 .btn-outline {
@@ -383,6 +388,14 @@ textarea {
 textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+.project-block select {
+  margin-bottom: 14px;
+}
+
+.project-block {
+  margin-bottom: 20px;
 }
 
 .footer {
