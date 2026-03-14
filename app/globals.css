@@ -123,21 +123,23 @@ main {
   box-shadow: 0 24px 60px rgba(0,0,0,0.24);
 }
 
-/*
-.logo-frame img {
+.logo-frame {
+  position: relative;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
 }
 
+/*
 **THIS IS THE ORIGINAL WITH A STRETCHED LOGO. NEW CODE TO ATTEMPT FIX ABOVE**
-*/
 .logo-frame {
   background: var(--paper);
   border-radius: 28px;
   padding: 14px;
   border: 1px solid rgba(217, 207, 180, 0.3);
 }
+*/
 
 h1, h2, h3 {
   line-height: 1.12;
