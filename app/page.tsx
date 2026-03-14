@@ -130,7 +130,7 @@ export default function HomePage() {
               <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>The Inland Pacific Standard</div>
               <p style={{ marginTop: 14 }}>
                 Luxury design sensibility, rugged Northwest identity, and professional surface systems built for
-                long-term beauty and performance.
+                long-term beauty, durability, and performance.
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ export default function HomePage() {
       </section>
 
       <section className="section dark-section">
-        <div className="container two-col">
+        {/* <div className="container two-col">
           <div>
             <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>Request an Estimate</div>
             <h2 style={{ marginTop: 14 }}>Let&apos;s talk about your surface transformation.</h2>
@@ -287,8 +287,18 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        */}
+         <div className="container vision">
+          <div className="eyebrow">Our Vision</div>
+          <p>
+            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
+            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
+            commercial markets.
+          </p>
+        </div>
       </section>
 
+      {/*
       <section className="section alt-section">
         <div className="container vision">
           <div className="eyebrow">Our Vision</div>
@@ -299,6 +309,7 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+      */}
     </main>
   );
 }
