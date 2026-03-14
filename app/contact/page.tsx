@@ -81,6 +81,11 @@ export default function ContactPage() {
               name="from_name"
               value="Inland Pacific Coatings Website"
             />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://ipcepoxy.com/thank-you"
+            />
 
             <div className="input-row">
               <input name="name" placeholder="Name" required />
