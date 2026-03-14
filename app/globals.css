@@ -123,16 +123,6 @@ main {
   box-shadow: 0 24px 60px rgba(0,0,0,0.24);
 }
 
-/*
-.logo-frame {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 1 / 1;
-  margin: 0 auto;
-}
-*/
-
 .logo-frame {
   position: relative;
   width: 100%;
@@ -148,15 +138,12 @@ main {
   overflow: hidden; /* THIS FIXES THE CORNERS */
 }
 
-/*
-**THIS IS THE ORIGINAL WITH A STRETCHED LOGO. NEW CODE TO ATTEMPT FIX ABOVE**
-.logo-frame {
-  background: var(--paper);
-  border-radius: 28px;
-  padding: 14px;
-  border: 1px solid rgba(217, 207, 180, 0.3);
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('fonts/trajan-pro-3-semibold.woff2') format('woff2');
+  font-weight: 600; /* Semibold is typically 600 */
+  font-style: normal;
 }
-*/
 
 h1, h2, h3 {
   line-height: 1.12;
@@ -164,7 +151,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-family: 'Trajan Pro 3', serif; /* Falling back to generic serif */
+  font-weight: 600;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
 }
 
 h2 {
