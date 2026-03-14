@@ -248,7 +248,7 @@ export default function HomePage() {
               Inland Pacific Coatings is built to help clients create spaces that look elevated and perform
               beautifully.
             </p>
-            <p><strong style={{ color: "var(--gold-soft)" }}>Phone:</strong> 208.660.2028</p>
+            <p><strong style={{ color: "var(--gold-soft)" }}>Phone:</strong> 208.714.1951</p>
             <p><strong style={{ color: "var(--gold-soft)" }}>Email:</strong> kevin@ipcepoxy.com</p>
             <p><strong style={{ color: "var(--gold-soft)" }}>Website:</strong> ipcepoxy.com</p>
           </div>
