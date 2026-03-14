@@ -24,7 +24,8 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  /*font-family: Georgia, "Times New Roman", serif; */
+  font-family: "trajan-pro-3", serif !important;
 }
 
 a {
