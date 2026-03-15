@@ -210,7 +210,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section dark-section">
         <div className="container">
           <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>Project Gallery</div>
           <h2 style={{ marginTop: 14 }}>Luxury visuals will sell this brand.</h2>
@@ -229,7 +229,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="hero section">
+      <section className="section alt-section">
          <div className="container vision">
           <div className="eyebrow">Our Vision</div>
           <p>
