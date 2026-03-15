@@ -210,6 +210,21 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+         <div className="container vision">
+          <div className="eyebrow">Our Vision</div>
+          <p>
+            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
+            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
+            commercial markets.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
+      {/* unused sections
+
       <section className="section dark-section">
         <div className="container">
           <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>Project Gallery</div>
@@ -228,21 +243,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <section className="section alt-section">
-         <div className="container vision">
-          <div className="eyebrow">Our Vision</div>
-          <p>
-            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
-            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
-            commercial markets.
-          </p>
-        </div>
-      </section>
-    </main>
-  );
-}
-      {/* unused sections
       
       <section className="section alt-section">
       <div className="container two-col">
