@@ -195,7 +195,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section alt-section">
+      <section className="section">
         <div className="container">
           <div className="eyebrow">Core Values</div>
           <h2 style={{ marginTop: 14 }}>What Inland Pacific Coatings stands for.</h2>
