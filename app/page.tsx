@@ -91,7 +91,6 @@ export default function HomePage() {
               <Link href="/contact" className="btn btn-primary">Request a Free Estimate</Link>
               <Link href="/epoxy-countertops" className="btn btn-secondary">Explore Countertop Services</Link>
             </div>
-
             <div className="stat-grid">
               <div className="stat">
                 <strong style={{ color: "var(--gold-soft)", display: "block", fontSize: 22 }}>Signature Focus</strong>
@@ -107,18 +106,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-
           <div className="hero-card">
             <div className="logo-frame">
-              {/* 
-              <Image
-                src="/ipc-logo.jpg"
-                alt="Inland Pacific Coatings"
-                width={700}
-                height={700}
-                style={{ maxWidth: "420px", width: "100%", height: "auto" }}
-              />
-             */}
               <Image
                 src="/ipc-logo.jpg"
                 alt="Inland Pacific Coatings"
@@ -240,22 +229,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/*
-      <section className="section">
-        <div className="container">
-          <div className="eyebrow">Service Area</div>
-          <h2 style={{ marginTop: 14 }}>Serving Coeur d&apos;Alene, Spokane, and surrounding Inland Northwest communities.</h2>
-          <div className="pill-list">
-            {areas.map((area) => (
-              <div className="pill" key={area}>{area}</div>
-            ))}
-          </div>
+      <section className="hero section">
+         <div className="container vision">
+          <div className="eyebrow">Our Vision</div>
+          <p>
+            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
+            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
+            commercial markets.
+          </p>
         </div>
       </section>
-      */}
-
-      <section className="hero section">
-        {/* <div className="container two-col">
+    </main>
+  );
+}
+      {/* unused sections
+      
+      <section className="section alt-section">
+      <div className="container two-col">
           <div>
             <div className="eyebrow" style={{ color: "var(--gold-soft)" }}>Request an Estimate</div>
             <h2 style={{ marginTop: 14 }}>Let&apos;s talk about your surface transformation.</h2>
@@ -289,29 +279,17 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        */}
-         <div className="container vision">
-          <div className="eyebrow">Our Vision</div>
-          <p>
-            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
-            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
-            commercial markets.
-          </p>
-        </div>
-      </section>
-
-      {/*
-      <section className="section alt-section">
-        <div className="container vision">
-          <div className="eyebrow">Our Vision</div>
-          <p>
-            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
-            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
-            commercial markets.
-          </p>
+        </section>
+        
+        <section className="section">
+        <div className="container">
+          <div className="eyebrow">Service Area</div>
+          <h2 style={{ marginTop: 14 }}>Serving Coeur d&apos;Alene, Spokane, and surrounding Inland Northwest communities.</h2>
+          <div className="pill-list">
+            {areas.map((area) => (
+              <div className="pill" key={area}>{area}</div>
+            ))}
+          </div>
         </div>
       </section>
       */}
-    </main>
-  );
-}
