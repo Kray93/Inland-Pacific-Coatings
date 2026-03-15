@@ -166,7 +166,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="hero section">
+      <section className="section alt-section">
         <div className="container two-col">
           <div>
             <div className="eyebrow">About the Brand</div>
