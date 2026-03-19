@@ -15,14 +15,11 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/epoxy-countertops">Countertops</Link>
-          <Link href="/decorative-epoxy-floors">Floors</Link>
-          <Link href="/garage-floor-systems">Garage</Link>
-          <Link href="/outdoor-surfaces">Outdoor</Link>
-          <Link href="/contact" className="btn btn-outline">Free Estimate</Link>
-        </nav>
+       <nav className="nav-links">
+  <Link href="/">Home</Link>
+  <Link href="/services">Services</Link>
+  <Link href="/contact" className="nav-cta">Free Estimate</Link>
+</nav>
       </div>
     </header>
   );
