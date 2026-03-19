@@ -443,27 +443,8 @@ textarea {
   margin-top: 56px;
 }
 
-@media (max-width: 960px) {
-  .hero-grid,
-  .two-col,
-  .services-grid,
-  .values-grid,
-  .gallery-grid,
-  .location-grid,
-  .input-row,
-  .stat-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .section {
-    padding: 64px 0;
-  }
-
-  .services-heading {
+/* Services section / cards */
+.services-heading {
   margin-top: 14px;
   max-width: 880px;
 }
@@ -506,28 +487,7 @@ textarea {
   text-decoration: underline;
 }
 
-.services-button-row {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.services-button {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: var(--gold);
-  color: #000;
-  font-weight: 700;
-  border-radius: 8px;
-  text-decoration: none;
-  font-family: Inter, Arial, sans-serif;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.services-button:hover {
-  opacity: 0.92;
-  transform: translateY(-1px);
-}
-
+/* View all services button */
 .services-button-row {
   margin-top: 56px;
   text-align: center;
@@ -555,7 +515,8 @@ textarea {
   opacity: 0.96;
   color: #111;
 }
-  
+
+/* Services page hero */
 .services-hero {
   background:
     radial-gradient(circle at top left, rgba(36, 66, 49, 0.9), transparent 32%),
@@ -583,8 +544,39 @@ textarea {
   margin-top: 18px;
 }
 
-.services-grid-spacing {
-  margin-top: 0;
-}
+@media (max-width: 960px) {
+  .hero-grid,
+  .two-col,
+  .services-grid,
+  .values-grid,
+  .gallery-grid,
+  .location-grid,
+  .input-row,
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .services-hero-inner {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+
+  .services-button-row {
+    margin-top: 44px;
+  }
+
+  .services-view-all {
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+  }
   
 }
