@@ -1,151 +1,201 @@
 import Link from "next/link";
 
-const services = [
+const serviceGroups = [
   {
-    subtitle: "Hero Service",
-    title: "Epoxy Countertops",
-    description:
-      "Custom epoxy countertops designed to deliver a high-end stone-inspired look with bold color, depth, and a durable protective finish.",
-    href: "/epoxy-countertops",
+    title: "Countertops",
+    intro:
+      "Custom countertop systems designed to transform kitchens, baths, bars, and feature spaces with premium finishes and handcrafted detail.",
+    services: [
+      {
+        subtitle: "Hero Service",
+        title: "Epoxy Countertops",
+        description:
+          "Custom epoxy countertops with stone-inspired movement, rich depth, and a refined finish designed to elevate kitchens, baths, bars, and feature spaces.",
+        href: "/epoxy-countertops",
+      },
+      {
+        subtitle: "Premium Surface Design",
+        title: "Concrete Countertops",
+        description:
+          "Handcrafted concrete countertops with natural texture, architectural character, and a custom finish for standout interiors.",
+        href: "/concrete-countertops",
+      },
+    ],
   },
   {
-    subtitle: "Premium Surface Design",
-    title: "Concrete Countertops",
-    description:
-      "Handcrafted concrete countertops with modern texture, custom tone, and a refined finish built for standout kitchens, baths, and bars.",
-    href: "/concrete-countertops",
+    title: "Floors",
+    intro:
+      "Decorative and performance-driven floor systems built for homes, shops, studios, and statement spaces that deserve more than a standard finish.",
+    services: [
+      {
+        subtitle: "Signature Finish",
+        title: "Hardwood Overlay Floors",
+        description:
+          "A unique flooring system that captures the warmth and visual texture of wood with the durability of a coated surface.",
+        href: "/hardwood-overlay-floors",
+      },
+      {
+        subtitle: "Luxury Interior Floors",
+        title: "Decorative Epoxy Floors",
+        description:
+          "Custom decorative floor finishes designed to bring movement, style, and a seamless high-end look to interior spaces.",
+        href: "/decorative-epoxy-floors",
+      },
+      {
+        subtitle: "Specialty Finish",
+        title: "Metallic Epoxy Floors",
+        description:
+          "High-impact metallic epoxy floors with dramatic depth, reflective movement, and a custom statement finish.",
+        href: "/metallic-epoxy-floors",
+      },
+      {
+        subtitle: "Durable Texture System",
+        title: "Flake Epoxy Floors",
+        description:
+          "Durable flake flooring systems for garages, shops, and high-use spaces that need traction, durability, and a clean finished look.",
+        href: "/flake-epoxy-floors",
+      },
+      {
+        subtitle: "Refined Surface Finish",
+        title: "Concrete Polishing & Sealing",
+        description:
+          "Polished and sealed concrete surfaces that create a cleaner, more architectural finish with improved durability and easier maintenance.",
+        href: "/concrete-polishing-sealing",
+      },
+      {
+        subtitle: "Natural Finish",
+        title: "Concrete Staining",
+        description:
+          "Concrete staining that enhances the natural character of the slab with tone, variation, and a more design-forward appearance.",
+        href: "/concrete-staining",
+      },
+      {
+        subtitle: "Residential Performance",
+        title: "Garage Floor Coatings",
+        description:
+          "Garage floor coatings designed to create a cleaner, better-protected, and more finished space for everyday use.",
+        href: "/garage-floor-coatings",
+      },
+    ],
   },
   {
-    subtitle: "Residential Performance",
-    title: "Garage Floor Coatings",
-    description:
-      "Durable garage floor systems built to resist wear, elevate appearance, and create a clean, finished space that performs every day.",
-    href: "/garage-floor-coatings",
+    title: "Outdoor Surfaces",
+    intro:
+      "Exterior systems designed to improve curb appeal, usability, traction, and finish quality across patios, walkways, pool areas, and worn surfaces.",
+    services: [
+      {
+        subtitle: "Premium Exterior Finish",
+        title: "Resin-Bound Gravel",
+        description:
+          "A clean, modern stone-bound surface for patios, walkways, and exterior feature areas that need a refined natural look.",
+        href: "/resin-bound-gravel",
+      },
+      {
+        subtitle: "Slip-Resistant System",
+        title: "Texture Deck Coatings",
+        description:
+          "Outdoor coatings built for pool decks, patios, and walkways where traction, durability, and comfort matter.",
+        href: "/texture-deck",
+      },
+      {
+        subtitle: "Surface Renewal",
+        title: "Concrete Resurfacing",
+        description:
+          "A practical way to restore worn concrete surfaces and create a cleaner, more uniform foundation for everyday use or future finishes.",
+        href: "/concrete-resurfacing",
+      },
+      {
+        subtitle: "Surface Renewal",
+        title: "Asphalt Resurfacing",
+        description:
+          "Decorative asphalt resurfacing that refreshes aged surfaces with a more polished and visually improved finish.",
+        href: "/asphalt-resurfacing",
+      },
+      {
+        subtitle: "Exterior Surface Systems",
+        title: "Outdoor Concrete Coatings",
+        description:
+          "Protective outdoor concrete coatings for patios, walkways, and exterior spaces designed for performance and presentation.",
+        href: "/outdoor-concrete-coatings",
+      },
+    ],
   },
   {
-    subtitle: "Luxury Interior Floors",
-    title: "Decorative Epoxy Floors",
-    description:
-      "Decorative floor coatings that bring seamless style, rich movement, and high-end character to interiors that need more than a basic finish.",
-    href: "/decorative-epoxy-floors",
-  },
-  {
-    subtitle: "Specialty Finish",
-    title: "Metallic Epoxy Floors",
-    description:
-      "Statement-making metallic epoxy floors with dramatic movement, reflective depth, and a custom luxury finish for bold interior spaces.",
-    href: "/metallic-epoxy-floors",
-  },
-  {
-    subtitle: "Durable Texture System",
-    title: "Flake Epoxy Floors",
-    description:
-      "Slip-resistant flake flooring systems designed for garages, shops, and high-traffic areas that need durability with a finished look.",
-    href: "/flake-epoxy-floors",
-  },
-  {
-    subtitle: "Refined Surface Finish",
-    title: "Concrete Polishing & Sealing",
-    description:
-      "Polished and sealed concrete surfaces that enhance clarity, improve durability, and deliver a clean architectural look for homes and businesses.",
-    href: "/concrete-polishing-sealing",
-  },
-  {
-    subtitle: "Exterior Surface Systems",
-    title: "Outdoor Concrete Coatings",
-    description:
-      "Protective outdoor surface coatings for patios, walkways, and poolside spaces designed for traction, durability, and curb appeal.",
-    href: "/outdoor-concrete-coatings",
-  },
-  {
-    subtitle: "Natural Look Finish",
-    title: "Concrete Staining",
-    description:
-      "Concrete staining systems that add rich tone, variation, and character to floors and surfaces while preserving a natural concrete feel.",
-    href: "/concrete-staining",
-  },
-  {
-    subtitle: "Distinctive Overlay",
-    title: "Hardwood Overlay Floors",
-    description:
-      "Decorative overlay floors crafted to capture the warmth and visual texture of wood with the durability of a coated surface system.",
-    href: "/hardwood-overlay-floors",
-  },
-  {
-    subtitle: "Premium Exterior Finish",
-    title: "Resin-Bound Gravel",
-    description:
-      "Resin-bound gravel systems that create a clean, elegant, and permeable finish for walkways, patios, and exterior feature areas.",
-    href: "/resin-bound-gravel",
-  },
-  {
-    subtitle: "Surface Renewal",
-    title: "Concrete Resurfacing",
-    description:
-      "Decorative concrete resurfacing that refreshes worn surfaces with a renewed appearance, improved durability, and a more finished presentation.",
-    href: "/concrete-resurfacing",
-  },
-  {
-    subtitle: "Surface Renewal",
-    title: "Asphalt Resurfacing",
-    description:
-      "Decorative asphalt resurfacing designed to improve appearance and provide a more refined finish for aged or visually tired surfaces.",
-    href: "/asphalt-resurfacing",
-  },
-  {
-    subtitle: "Architectural Feature",
-    title: "Concrete Wall Coatings",
-    description:
-      "Decorative concrete wall finishes that add texture, depth, and a custom architectural feel to vertical surfaces and feature spaces.",
-    href: "/concrete-wall-coatings",
-  },
-  {
-    subtitle: "Wet Area Systems",
-    title: "Shower Systems",
-    description:
-      "Seamless decorative shower systems built for a clean, modern look with durable protection and a custom-finished appearance.",
-    href: "/shower-systems",
+    title: "Walls & Vertical Surfaces",
+    intro:
+      "Decorative vertical systems created to bring depth, texture, and a more custom architectural feel to walls, bathrooms, and feature spaces.",
+    services: [
+      {
+        subtitle: "Architectural Finish",
+        title: "Concrete Wall Coatings",
+        description:
+          "Decorative concrete wall finishes that add texture, visual depth, and a design-forward look to interior spaces.",
+        href: "/concrete-wall-coatings",
+      },
+      {
+        subtitle: "Wet Area Systems",
+        title: "Shower Systems",
+        description:
+          "Seamless shower systems designed to replace traditional tile with a cleaner, more modern, and easier-to-maintain finish.",
+        href: "/shower-systems",
+      },
+    ],
   },
 ];
 
 export default function ServicesPage() {
   return (
-    <>
+    <main>
       <section className="hero services-hero">
         <div className="container services-hero-inner">
           <div className="eyebrow">All Services</div>
           <h1 className="services-page-title">
-            Premium surface systems for countertops, floors, walls, and outdoor spaces.
+            Premium surface systems for countertops, floors, outdoor spaces, and vertical finishes.
           </h1>
           <p className="lead services-page-lead">
             Explore the full range of decorative and protective surface solutions offered by Inland Pacific Coatings.
-            From standout countertops to durable flooring and refined exterior finishes, every system is built around
-            craftsmanship, design, and long-term performance.
+            Every service is built around craftsmanship, design, and long-term performance.
           </p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <div className="card-grid services-grid services-grid-spacing">
-            {services.map((service, index) => (
-              <article key={service.title} className={`card ${index === 0 ? "featured" : ""}`}>
-                <div className="eyebrow">{service.subtitle}</div>
-                <h2 className="service-card-title">{service.title}</h2>
-                <p className="service-card-description">{service.description}</p>
-                <p className="service-card-note">
-                  Custom quoted based on surface type, prep, layout, and finish complexity.
-                </p>
-                <div className="service-card-link-wrap">
-                  <Link href={service.href} className="service-card-link">
-                    Learn more →
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
+          {serviceGroups.map((group, groupIndex) => (
+            <div
+              key={group.title}
+              className={`services-group ${groupIndex > 0 ? "services-group-spaced" : ""}`}
+            >
+              <div className="eyebrow">{group.title}</div>
+              <h2 className="services-group-title">{group.title}</h2>
+              <p className="lead services-group-intro">{group.intro}</p>
+
+              <div className="card-grid services-grid services-grid-spacing">
+                {group.services.map((service, index) => (
+                  <article
+                    key={service.title}
+                    className={`card ${
+                      group.title === "Countertops" && index === 0 ? "featured" : ""
+                    }`}
+                  >
+                    <div className="eyebrow">{service.subtitle}</div>
+                    <h3 className="service-card-title">{service.title}</h3>
+                    <p className="service-card-description">{service.description}</p>
+                    <p className="service-card-note">
+                      Custom quoted based on surface type, prep, layout, and finish complexity.
+                    </p>
+                    <div className="service-card-link-wrap">
+                      <Link href={service.href} className="service-card-link">
+                        Learn more →
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
-    </>
+    </main>
   );
 }

@@ -579,4 +579,22 @@ textarea {
     max-width: 320px;
   }
   
+.services-group + .services-group {
+  margin-top: 88px;
+}
+
+.services-group-title {
+  margin-top: 14px;
+  max-width: 880px;
+}
+
+.services-group-intro {
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.services-group-spaced {
+  padding-top: 8px;
+}
+
 }
