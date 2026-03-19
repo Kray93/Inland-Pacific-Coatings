@@ -3,40 +3,47 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Epoxy Countertop Refinishing & Resurfacing",
-    subtitle: "Fast-start signature service",
+    subtitle: "Hero Service",
+    title: "Epoxy Countertops",
     description:
-      "Transform dated countertops with premium epoxy resurfacing systems that create a clean, durable, stone-inspired finish without full replacement.",
-    href: "/epoxy-countertops"
+      "Custom epoxy countertops designed to deliver a high-end stone-inspired look with bold color, depth, and a durable protective finish.",
+    href: "/epoxy-countertops",
   },
   {
-    title: "Custom Epoxy Countertops",
-    subtitle: "Luxury statement surfaces",
+    subtitle: "Premium Surface Design",
+    title: "Concrete Countertops",
     description:
-      "Metallic, stone-style, and custom-finish countertops for kitchens, bars, bathrooms, and feature spaces throughout the Inland Northwest.",
-    href: "/epoxy-countertops"
+      "Handcrafted concrete countertops with modern texture, custom tone, and a refined finish built for standout kitchens, baths, and bars.",
+    href: "/concrete-countertops",
   },
   {
+    subtitle: "Residential Performance",
+    title: "Garage Floor Coatings",
+    description:
+      "Durable garage floor systems built to resist wear, elevate appearance, and create a clean, finished space that performs every day.",
+    href: "/garage-floor-coatings",
+  },
+  {
+    subtitle: "Luxury Interior Floors",
     title: "Decorative Epoxy Floors",
-    subtitle: "Designer flooring systems",
     description:
-      "High-end metallic and decorative floor systems for basements, interiors, showrooms, and premium residential spaces.",
-    href: "/decorative-epoxy-floors"
+      "Decorative floor coatings that bring seamless style, rich movement, and high-end character to interiors that need more than a basic finish.",
+    href: "/decorative-epoxy-floors",
   },
   {
-    title: "Garage Floor Systems",
-    subtitle: "Durable everyday performance",
+    subtitle: "Refined Concrete Finish",
+    title: "Concrete Polishing & Sealing",
     description:
-      "Flake, epoxy, and polyaspartic systems built for garages, shops, and hardworking spaces that still need to look sharp.",
-    href: "/garage-floor-systems"
+      "Polished and sealed concrete surfaces that enhance clarity, improve durability, and deliver a clean architectural look for homes and businesses.",
+    href: "/concrete-polishing-sealing",
   },
   {
-    title: "Outdoor Surface Systems",
-    subtitle: "Luxury outdoor living",
+    subtitle: "Exterior Surface Systems",
+    title: "Outdoor Concrete Coatings",
     description:
-      "Resin-bound gravel and texture deck systems for patios, walkways, decks, and outdoor entertaining spaces.",
-    href: "/outdoor-surfaces"
-  }
+      "Protective outdoor surface coatings for patios, walkways, and poolside spaces designed for traction, durability, and curb appeal.",
+    href: "/outdoor-concrete-coatings",
+  },
 ];
 
 const coreValues = [
