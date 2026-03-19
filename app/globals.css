@@ -527,5 +527,36 @@ textarea {
   opacity: 0.92;
   transform: translateY(-1px);
 }
+
+.services-hero {
+  background:
+    radial-gradient(circle at top left, rgba(36, 66, 49, 0.9), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(182, 144, 61, 0.24), transparent 25%),
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/epoxy-hero-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.services-hero-inner {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.services-page-title {
+  margin-top: 14px;
+  max-width: 900px;
+}
+
+.services-page-lead {
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.services-grid-spacing {
+  margin-top: 0;
+}
   
 }
