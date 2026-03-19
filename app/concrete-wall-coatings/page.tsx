@@ -110,6 +110,17 @@ export default function ConcreteWallCoatingsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/shower-systems" className="pill">Shower Systems</Link>
+      <Link href="/concrete-staining" className="pill">Concrete Staining</Link>
+      <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Concrete wall coatings in Coeur d&apos;Alene and Spokane</h2>

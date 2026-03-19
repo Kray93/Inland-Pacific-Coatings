@@ -117,6 +117,17 @@ export default function ConcreteStainingPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
+      <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
+      <Link href="/hardwood-overlay-floors" className="pill">Hardwood Overlay Floors</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Concrete staining in Coeur d&apos;Alene and Spokane</h2>

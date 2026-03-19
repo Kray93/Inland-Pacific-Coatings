@@ -120,6 +120,17 @@ export default function OutdoorConcreteCoatingsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/resin-bound-gravel" className="pill">Resin-Bound Gravel</Link>
+      <Link href="/texture-deck" className="pill">Texture Deck Coatings</Link>
+      <Link href="/concrete-resurfacing" className="pill">Concrete Resurfacing</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Upgrade your outdoor space</h2>

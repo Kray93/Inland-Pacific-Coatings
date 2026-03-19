@@ -112,6 +112,17 @@ export default function ConcreteResurfacingPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/asphalt-resurfacing" className="pill">Asphalt Resurfacing</Link>
+      <Link href="/flake-epoxy-floors" className="pill">Flake Epoxy Floors</Link>
+      <Link href="/outdoor-concrete-coatings" className="pill">Outdoor Concrete Coatings</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Concrete resurfacing in Coeur d&apos;Alene and Spokane</h2>

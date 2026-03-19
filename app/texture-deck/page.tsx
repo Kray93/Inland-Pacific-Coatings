@@ -114,6 +114,17 @@ export default function TextureDeckPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/resin-bound-gravel" className="pill">Resin-Bound Gravel</Link>
+      <Link href="/outdoor-concrete-coatings" className="pill">Outdoor Concrete Coatings</Link>
+      <Link href="/concrete-resurfacing" className="pill">Concrete Resurfacing</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Texture deck coatings in Coeur d&apos;Alene and Spokane</h2>

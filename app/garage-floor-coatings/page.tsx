@@ -141,6 +141,17 @@ export default function GarageFloorCoatingsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/flake-epoxy-floors" className="pill">Flake Epoxy Floors</Link>
+      <Link href="/concrete-resurfacing" className="pill">Concrete Resurfacing</Link>
+      <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Garage floor coatings in Coeur d&apos;Alene, Spokane, and the Inland Northwest</h2>

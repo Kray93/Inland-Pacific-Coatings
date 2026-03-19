@@ -118,6 +118,17 @@ export default function MetallicEpoxyFloorsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
+      <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
+      <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Metallic epoxy floors in Coeur d&apos;Alene and Spokane</h2>

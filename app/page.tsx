@@ -6,42 +6,42 @@ const services = [
     subtitle: "Hero Service",
     title: "Epoxy Countertops",
     description:
-      "Custom epoxy countertops designed to deliver a high-end stone-inspired look with bold color, depth, and a durable protective finish.",
+      "Custom epoxy countertops with stone-inspired movement, rich depth, and a refined finish designed to elevate kitchens, baths, bars, and feature spaces.",
     href: "/epoxy-countertops",
+  },
+  {
+    subtitle: "Signature Finish",
+    title: "Hardwood Overlay Floors",
+    description:
+      "A distinctive flooring system that captures the warmth and visual texture of wood with the durability and seamless performance of a coated surface.",
+    href: "/hardwood-overlay-floors",
   },
   {
     subtitle: "Premium Surface Design",
     title: "Concrete Countertops",
     description:
-      "Handcrafted concrete countertops with modern texture, custom tone, and a refined finish built for standout kitchens, baths, and bars.",
+      "Handcrafted concrete countertops with natural texture, architectural character, and a custom finish for standout interiors.",
     href: "/concrete-countertops",
   },
   {
     subtitle: "Residential Performance",
     title: "Garage Floor Coatings",
     description:
-      "Durable garage floor systems built to resist wear, elevate appearance, and create a clean, finished space that performs every day.",
+      "Durable garage floor coatings designed to create a cleaner, better-protected, and more finished space for everyday use.",
     href: "/garage-floor-coatings",
   },
   {
     subtitle: "Luxury Interior Floors",
     title: "Decorative Epoxy Floors",
     description:
-      "Decorative floor coatings that bring seamless style, rich movement, and high-end character to interiors that need more than a basic finish.",
+      "Custom decorative floor finishes designed to bring movement, style, and a seamless high-end look to interior spaces.",
     href: "/decorative-epoxy-floors",
-  },
-  {
-    subtitle: "Refined Concrete Finish",
-    title: "Concrete Polishing & Sealing",
-    description:
-      "Polished and sealed concrete surfaces that enhance clarity, improve durability, and deliver a clean architectural look for homes and businesses.",
-    href: "/concrete-polishing-sealing",
   },
   {
     subtitle: "Exterior Surface Systems",
     title: "Outdoor Concrete Coatings",
     description:
-      "Protective outdoor surface coatings for patios, walkways, and poolside spaces designed for traction, durability, and curb appeal.",
+      "Protective outdoor concrete coatings for patios, walkways, and exterior spaces designed for performance and presentation.",
     href: "/outdoor-concrete-coatings",
   },
 ];

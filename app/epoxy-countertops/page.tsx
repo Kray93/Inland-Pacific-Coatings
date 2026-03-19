@@ -185,6 +185,17 @@ export default function EpoxyCountertopsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+        <div className="container article">
+          <h2>Related Services</h2>
+            <div className="pill-list">
+              <Link href="/concrete-countertops" className="pill">Concrete Countertops</Link>
+              <Link href="/metallic-epoxy-floors" className="pill">Metallic Epoxy Floors</Link>
+              <Link href="/hardwood-overlay-floors" className="pill">Hardwood Overlay Floors</Link>
+            </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container article">
           <h2>Transform your countertops</h2>

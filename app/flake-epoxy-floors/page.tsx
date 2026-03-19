@@ -119,6 +119,17 @@ export default function FlakeEpoxyFloorsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/garage-floor-coatings" className="pill">Garage Floor Coatings</Link>
+      <Link href="/concrete-resurfacing" className="pill">Concrete Resurfacing</Link>
+      <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Flake epoxy floors in Coeur d&apos;Alene and Spokane</h2>

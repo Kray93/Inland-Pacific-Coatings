@@ -120,6 +120,17 @@ export default function ConcreteCountertopsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+        <div className="container article">
+          <h2>Related Services</h2>
+            <div className="pill-list">
+                <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
+                <Link href="/metallic-epoxy-floors" className="pill">Metallic Epoxy Floors</Link>
+                <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
+            </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container article">
           <h2>Concrete countertops in Coeur d&apos;Alene, Spokane, and the Inland Northwest</h2>

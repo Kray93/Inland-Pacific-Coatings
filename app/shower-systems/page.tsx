@@ -102,6 +102,17 @@ export default function ShowerSystemsPage() {
         </div>
       </section>
 
+      <section className="section alt-section">
+  <div className="container article">
+    <h2>Related Services</h2>
+    <div className="pill-list">
+      <Link href="/concrete-wall-coatings" className="pill">Concrete Wall Coatings</Link>
+      <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
+      <Link href="/concrete-countertops" className="pill">Concrete Countertops</Link>
+    </div>
+  </div>
+</section>
+
       <section className="section">
         <div className="container article">
           <h2>Shower systems in Coeur d&apos;Alene and Spokane</h2>
