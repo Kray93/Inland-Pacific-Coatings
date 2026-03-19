@@ -174,7 +174,7 @@ export default function HomePage() {
           </div>
 
          <div className="services-button-row">
-           <Link href="/services" className="btn btn-secondary services-view-all">
+           <Link href="/services" className="btn services-view-all">
              View All Services →
            </Link>
          </div>
