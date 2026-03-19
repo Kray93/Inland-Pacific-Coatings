@@ -147,28 +147,36 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="eyebrow">Signature Services</div>
-          <h2 style={{ marginTop: 14, maxWidth: 880 }}>Surface systems designed for high-end homes and standout spaces.</h2>
-          <p className="lead" style={{ maxWidth: 760, marginTop: 18 }}>
+          <h2 className="services-heading">
+            Surface systems designed for high-end homes and standout spaces.
+          </h2>
+          <p className="lead services-lead">
             Inland Pacific Coatings focuses on premium epoxy and decorative surface systems that balance design,
             durability, and professional execution.
           </p>
 
-          <div className="card-grid services-grid" style={{ marginTop: 36 }}>
+          <div className="card-grid services-grid services-grid-spacing">
             {services.map((service, index) => (
               <article key={service.title} className={`card ${index === 0 ? "featured" : ""}`}>
                 <div className="eyebrow">{service.subtitle}</div>
-                <h3 style={{ marginTop: 12 }}>{service.title}</h3>
-                <p style={{ marginTop: 14 }}>{service.description}</p>
-                <p style={{ marginTop: 16, fontWeight: 700, color: "var(--ink)" }}>
+                <h3 className="service-card-title">{service.title}</h3>
+                <p className="service-card-description">{service.description}</p>
+                <p className="service-card-note">
                   Custom quoted based on surface type, prep, layout, and finish complexity.
                 </p>
-                <div style={{ marginTop: 18 }}>
-                  <Link href={service.href} style={{ color: "var(--gold)", fontWeight: 700, fontFamily: "Inter, Arial, sans-serif" }}>
+                <div className="service-card-link-wrap">
+                  <Link href={service.href} className="service-card-link">
                     Learn more →
                   </Link>
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="services-button-row">
+            <Link href="/services" className="services-button">
+              View All Services
+            </Link>
           </div>
         </div>
       </section>
