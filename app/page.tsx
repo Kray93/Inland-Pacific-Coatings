@@ -173,11 +173,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="services-button-row">
-            <Link href="/services" className="services-button">
-              View All Services
-            </Link>
-          </div>
+         <div className="services-button-row">
+           <Link href="/services" className="btn btn-secondary services-view-all">
+             View All Services →
+           </Link>
+         </div>
         </div>
       </section>
 
