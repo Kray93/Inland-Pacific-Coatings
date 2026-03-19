@@ -148,7 +148,6 @@ export default function ServicesPage() {
     <main>
       <section className="hero services-hero">
         <div className="container services-hero-inner">
-          <div className="eyebrow">All Services</div>
           <h1 className="services-page-title">
             Premium surface systems for countertops, floors, outdoor spaces, and vertical finishes.
           </h1>
@@ -166,7 +165,6 @@ export default function ServicesPage() {
               key={group.title}
               className={`services-group ${groupIndex > 0 ? "services-group-spaced" : ""}`}
             >
-              <div className="eyebrow">{group.title}</div>
               <h2 className="services-group-title">{group.title}</h2>
               <p className="lead services-group-intro">{group.intro}</p>
 
@@ -178,7 +176,6 @@ export default function ServicesPage() {
                       group.title === "Countertops" && index === 0 ? "featured" : ""
                     }`}
                   >
-                    <div className="eyebrow">{service.subtitle}</div>
                     <h3 className="service-card-title">{service.title}</h3>
                     <p className="service-card-description">{service.description}</p>
                     <p className="service-card-note">
