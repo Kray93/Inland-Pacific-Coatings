@@ -161,9 +161,6 @@ export default function HomePage() {
                 <div className="eyebrow">{service.subtitle}</div>
                 <h3 className="service-card-title">{service.title}</h3>
                 <p className="service-card-description">{service.description}</p>
-                <p className="service-card-note">
-                  Custom quoted based on surface type, prep, layout, and finish complexity.
-                </p>
                 <div className="service-card-link-wrap">
                   <Link href={service.href} className="service-card-link">
                     Learn more →
