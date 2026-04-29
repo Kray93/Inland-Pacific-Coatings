@@ -22,11 +22,67 @@ export const metadata: Metadata = {
   }
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Inland Pacific Coatings",
+  "url": "https://ipcepoxy.com",
+  "telephone": "+1-208-714-1951",
+  "email": "kevin@ipcepoxy.com",
+  "description": "Premium epoxy countertops, decorative floors, garage floor systems, and outdoor surface coatings serving Coeur d'Alene, Spokane, and the Inland Northwest.",
+  "image": "https://ipcepoxy.com/ipc-logo.jpg",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Coeur d'Alene",
+    "addressRegion": "ID",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Coeur d'Alene",
+      "sameAs": "https://en.wikipedia.org/wiki/Coeur_d%27Alene,_Idaho"
+    },
+    {
+      "@type": "City",
+      "name": "Spokane",
+      "sameAs": "https://en.wikipedia.org/wiki/Spokane,_Washington"
+    },
+    {
+      "@type": "State",
+      "name": "Inland Northwest"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Surface Coating Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Epoxy Countertop Refinishing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Countertops" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garage Floor Coatings" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Decorative Epoxy Floors" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hardwood Overlay Floors" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Metallic Epoxy Floors" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outdoor Concrete Coatings" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Polishing & Sealing" } }
+    ]
+  },
+  "sameAs": [
+    "https://ipcepoxy.com"
+  ]
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/vat4zck.css" />
+        {/* Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
       </head>
       <body>
         {/* Google Ads Tag */}
