@@ -18,7 +18,22 @@ export const metadata: Metadata = {
       "Premium epoxy countertops, decorative floors, and outdoor surface systems for the Inland Northwest.",
     url: "https://ipcepoxy.com",
     siteName: "Inland Pacific Coatings",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "https://ipcepoxy.com/epoxy-hero-2.png",
+        width: 1200,
+        height: 630,
+        alt: "Premium epoxy surfaces by Inland Pacific Coatings"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Inland Pacific Coatings",
+    description:
+      "Premium epoxy countertops, decorative floors, and outdoor surface systems for the Inland Northwest.",
+    images: ["https://ipcepoxy.com/epoxy-hero-2.png"]
   }
 };
 
