@@ -421,7 +421,8 @@ textarea {
   display: grid;
   grid-template-columns: 1.8fr 1fr 1fr;
   gap: 48px;
-  padding: 56px 0 48px;
+  padding-top: 56px;
+  padding-bottom: 48px;
 }
 
 .footer-brand {}
@@ -512,7 +513,8 @@ textarea {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 36px;
-    padding: 40px 0 32px;
+    padding-top: 40px;
+    padding-bottom: 32px;
   }
 
   .footer-blurb {
