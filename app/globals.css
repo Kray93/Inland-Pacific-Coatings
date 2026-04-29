@@ -416,14 +416,108 @@ textarea {
   background: var(--bg);
 }
 
-.footer-inner {
-  min-height: 88px;
+/* Footer grid layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 48px;
+  padding: 56px 0 48px;
+}
+
+.footer-brand {}
+
+.footer-logo-name {
+  font-family: "trajan-pro-3", serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+}
+
+.footer-tagline {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 6px;
+}
+
+.footer-blurb {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  max-width: 280px;
+}
+
+.footer-col-heading {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li,
+.footer-links a {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-area {
+  margin-top: 4px;
+  font-size: 0.88rem !important;
+  line-height: 1.6 !important;
+}
+
+.footer-cta {
+  margin-top: 20px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+}
+
+.footer-bottom-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
   color: var(--ink-soft);
+}
+
+@media (max-width: 760px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 40px 0 32px;
+  }
+
+  .footer-blurb {
+    max-width: 100%;
+  }
 }
 
 .article {

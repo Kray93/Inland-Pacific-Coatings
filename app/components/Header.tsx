@@ -26,6 +26,7 @@ export function Header() {
         <nav className="nav-links">
           <Link href="/">Home</Link>
           <Link href="/services">Services</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/contact" className="nav-cta">Free Estimate</Link>
         </nav>
 
@@ -51,6 +52,9 @@ export function Header() {
             </Link>
             <Link href="/services" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
               Services
+            </Link>
+            <Link href="/contact" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
+              Contact
             </Link>
             <Link href="/contact" className="btn btn-primary mobile-menu-cta" onClick={() => setIsOpen(false)}>
               Free Estimate
