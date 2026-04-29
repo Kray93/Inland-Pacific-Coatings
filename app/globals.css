@@ -515,10 +515,28 @@ textarea {
     gap: 36px;
     padding-top: 40px;
     padding-bottom: 32px;
+    text-align: center;
   }
 
   .footer-blurb {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-cta {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
   }
 }
 
