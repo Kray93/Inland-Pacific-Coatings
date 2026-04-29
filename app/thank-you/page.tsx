@@ -1,15 +1,27 @@
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Thank You | Inland Pacific Coatings",
   description:
-    "Thank you for contacting Inland Pacific Coatings. We’ve received your estimate request and will be in touch soon.",
+    "Thank you for contacting Inland Pacific Coatings. We've received your estimate request and will be in touch soon.",
 };
 
 export default function ThankYouPage() {
   return (
     <main className="section dark-section">
+      {/* Google Ads Conversion — Estimate Form Submit */}
+      <Script id="ads-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18126713560/27RjCM_6rKQcENjlvsND',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+        `}
+      </Script>
+
       <div className="container">
         <section
           className="form-wrap thank-you-card"
@@ -38,7 +50,7 @@ export default function ThankYouPage() {
               marginRight: "auto",
             }}
           >
-            We’ve received your estimate request and will review your project
+            We've received your estimate request and will review your project
             details soon. Inland Pacific Coatings will be in touch as quickly as
             possible.
           </p>
