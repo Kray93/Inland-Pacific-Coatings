@@ -100,16 +100,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        {/* Google Ads Tag */}
+        {/* Google Ads + Analytics Tag */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18126713560"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JY8YEZKYJT"
           strategy="afterInteractive"
         />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        <Script id="google-tag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', 'G-JY8YEZKYJT');
             gtag('config', 'AW-18126713560');
           `}
         </Script>
