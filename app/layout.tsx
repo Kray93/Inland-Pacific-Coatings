@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -101,26 +100,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        {/* Google Ads Tag */}
+        {/* Google Tag — manages both Google Ads (AW-18126713560) and GA4 (G-JY8YEZKYJT) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18126713560"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-5NGRF2F8"
           strategy="afterInteractive"
         />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        <Script id="google-tag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18126713560');
+            gtag('config', 'GT-5NGRF2F8');
           `}
         </Script>
 
         <Header />
         {children}
         <Footer />
-
-        {/* Google Analytics 4 — official Next.js method */}
-        <GoogleAnalytics gaId="G-JY8YEZKYJT" />
       </body>
     </html>
   );
