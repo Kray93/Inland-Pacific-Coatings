@@ -6,6 +6,10 @@ import { Header } from "./components/Header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ipcepoxy.com"),
+  icons: {
+    icon: "/ipc-logo.jpg",
+    apple: "/ipc-logo.jpg",
+  },
   title: {
     default: "Inland Pacific Coatings | Premium Epoxy Countertops & Decorative Floors",
     template: "%s | Inland Pacific Coatings"
