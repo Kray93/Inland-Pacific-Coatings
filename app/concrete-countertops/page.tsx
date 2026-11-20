@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Concrete Countertops | Inland Pacific Coatings",
+  title: "Concrete Countertops in Coeur d'Alene & Spokane",
   description:
     "Custom concrete countertops for kitchens, bathrooms, bars, and feature spaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/concrete-countertops" },
 };
 
 export default function ConcreteCountertopsPage() {

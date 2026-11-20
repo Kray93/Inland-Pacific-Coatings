@@ -3,9 +3,10 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thank You | Inland Pacific Coatings",
+  title: "Thank You",
   description:
     "Thank you for contacting Inland Pacific Coatings. We've received your estimate request and will be in touch soon.",
+  robots: { index: false, follow: true },
 };
 
 export default function ThankYouPage() {

@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Concrete Polishing & Sealing | Inland Pacific Coatings",
+  title: "Concrete Polishing & Sealing in Coeur d'Alene & Spokane",
   description:
     "Concrete polishing and sealing for homes, shops, commercial interiors, and high-traffic spaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/concrete-polishing-sealing" },
 };
 
 export default function ConcretePolishingSealingPage() {
@@ -132,6 +135,8 @@ export default function ConcretePolishingSealingPage() {
     </div>
   </div>
 </section>
+
+      <ProductsUsed brand={brands.directColors} heading="Concrete sealers from Direct Colors." className="alt-section" />
 
       <section className="section">
         <div className="container article">

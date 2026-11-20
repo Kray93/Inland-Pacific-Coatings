@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Concrete Wall Coatings | Inland Pacific Coatings",
+  title: "Concrete Wall Coatings in Coeur d'Alene & Spokane",
   description:
     "Decorative concrete wall coatings for interior and feature spaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/concrete-wall-coatings" },
 };
 
 export default function ConcreteWallCoatingsPage() {
@@ -124,6 +127,8 @@ export default function ConcreteWallCoatingsPage() {
     </div>
   </div>
 </section>
+
+      <ProductsUsed brand={brands.directColors} heading="Stained vertical concrete with Direct Colors DecoGel." className="alt-section" />
 
       <section className="section">
         <div className="container article">

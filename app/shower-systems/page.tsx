@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Shower Systems | Inland Pacific Coatings",
+  title: "Seamless Shower Systems in Coeur d'Alene & Spokane",
   description:
     "Seamless decorative shower systems for bathrooms across Coeur d'Alene, Spokane, and the Inland Northwest. Modern, durable, and custom-finished.",
+  alternates: { canonical: "/shower-systems" },
 };
 
 export default function ShowerSystemsPage() {
@@ -110,6 +111,7 @@ export default function ShowerSystemsPage() {
   <div className="container article">
     <h2>Related Services</h2>
     <div className="pill-list">
+      <Link href="/tub-sink-reglazing" className="pill">Tub & Sink Reglazing</Link>
       <Link href="/concrete-wall-coatings" className="pill">Concrete Wall Coatings</Link>
       <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
       <Link href="/concrete-countertops" className="pill">Concrete Countertops</Link>

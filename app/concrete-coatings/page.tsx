@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { Photo, PhotoGallery } from "../components/Photo";
 import { ServiceCards } from "../components/ServiceCards";
 import { getCategory } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "Concrete Coating & Sealing",
+  title: "Concrete Coating & Sealing in Coeur d'Alene & Spokane",
   description:
     "Garage floor coatings, concrete sealing, polishing, staining, resurfacing, and exterior coatings for patios, driveways, walkways, and pool decks in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/concrete-coatings" },
 };
 
 const category = getCategory("concrete");
@@ -97,6 +100,8 @@ export default function ConcreteCoatingsPage() {
           </div>
         </div>
       </section>
+
+      <ProductsUsed brand={brands.directColors} heading="Direct Colors acid stains & sealers." />
 
       <CtaBand />
     </main>

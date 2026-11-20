@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
+import { ProductsUsed, Faq, type FaqItem } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { Photo, PhotoGallery } from "../components/Photo";
 import { ServiceCards } from "../components/ServiceCards";
 import type { PhotoKey } from "../lib/photos";
 import { getCategory, type SubService } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "Commercial Painting",
+  title: "Commercial Painting in Coeur d'Alene & Spokane",
   description:
-    "Commercial painting for offices, retail, multi-unit properties, and shops in Coeur d'Alene, Spokane, and the Inland Northwest. Flexible scheduling to keep your business running.",
+    "Commercial painting for offices, retail, multi-unit properties, and shops with Sherwin-Williams coatings. Evening and weekend scheduling in Coeur d'Alene and Spokane.",
+  alternates: { canonical: "/commercial-painting" },
 };
 
 const category = { ...getCategory("painting"), image: "painting-commercial" as PhotoKey, shortTitle: "Commercial Painting" };
@@ -97,6 +100,25 @@ const reasons = [
   { title: "Clean, professional jobsite", text: "Protected work areas and daily cleanup — respectful of your customers, tenants, and staff." },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    q: "Can you paint while our business is open?",
+    a: "Yes. We can work evenings, weekends, or in phases so your doors stay open, and we use low-odor products in occupied spaces.",
+  },
+  {
+    q: "Do you offer zero-VOC paint for occupied buildings?",
+    a: "Yes. We use Sherwin-Williams commercial products such as ProMar 200 Zero VOC, which is well suited to offices, rentals, healthcare, and other occupied spaces.",
+  },
+  {
+    q: "Can you paint and coat the floors on the same project?",
+    a: "Yes. Because we also install epoxy, polished concrete, and concrete sealers, we can handle walls and floors under one schedule and one contract.",
+  },
+  {
+    q: "Do you work with property managers on unit turnovers?",
+    a: "Yes. We handle unit turnovers, hallways, common areas, and full exterior repaints for multi-unit and rental properties throughout Coeur d'Alene and Spokane.",
+  },
+];
+
 export default function CommercialPaintingPage() {
   return (
     <main>
@@ -164,6 +186,10 @@ export default function CommercialPaintingPage() {
           "painting-prep",
         ]}
       />
+
+      <ProductsUsed brand={brands.sherwinWilliams} heading="Commercial-grade Sherwin-Williams coatings." />
+
+      <Faq items={faqs} />
 
       <CtaBand text="Tell us about your property and timeline, and we'll put together a clear written estimate." />
     </main>

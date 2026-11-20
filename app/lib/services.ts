@@ -119,7 +119,7 @@ export const coreCategories: CoreCategory[] = [
     shortTitle: "Epoxy",
     tagline: "Countertops, decorative & metallic floors",
     description:
-      "Seamless, high-performance epoxy systems — from custom stone-look countertops to metallic statement floors, flake floors, and seamless showers.",
+      "Seamless, high-performance coating systems — from custom stone-look countertops and metallic statement floors to seamless showers and tub & sink reglazing.",
     href: "/epoxy",
     image: "hub-epoxy",
     services: [
@@ -170,6 +170,14 @@ export const coreCategories: CoreCategory[] = [
           "Seamless shower systems designed to replace traditional tile with a cleaner, more modern, and easier-to-maintain finish.",
         href: "/shower-systems",
         image: "shower-systems-1",
+      },
+      {
+        subtitle: "Bath & Kitchen Refinishing",
+        title: "Tub & Sink Reglazing",
+        description:
+          "Restore worn, chipped, or dated tubs and sinks with a durable, glossy new finish — at a fraction of the cost and mess of replacement.",
+        href: "/tub-sink-reglazing",
+        image: "tub-sink-reglazing-1",
       },
     ],
   },
@@ -254,7 +262,11 @@ export const estimateOptions: { label: string; hint: string }[] = [
   },
   {
     label: "Epoxy Floors & Countertops",
-    hint: "Floor or countertop? Where is it, about how big, and do you have a look in mind (flake, metallic, marble, wood-look)?",
+    hint: "Floor, countertop, or shower? Where is it, about how big, and do you have a look in mind (flake, metallic, marble, wood-look)?",
+  },
+  {
+    label: "Tub & Sink Reglazing",
+    hint: "How many tubs and/or sinks, what material (porcelain, fiberglass, acrylic), and any chips, cracks, or stains we should know about?",
   },
   {
     label: "Residential Painting",

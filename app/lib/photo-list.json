@@ -156,6 +156,24 @@
       "alt": "Bathroom with seamless shower",
       "src": null
     },
+    "tub-sink-reglazing-1": {
+      "category": "epoxy",
+      "label": "Reglazed bathtub",
+      "alt": "Reglazed bathtub",
+      "src": null
+    },
+    "tub-sink-reglazing-2": {
+      "category": "epoxy",
+      "label": "Reglazed sink close-up",
+      "alt": "Reglazed sink close-up",
+      "src": null
+    },
+    "tub-sink-reglazing-3": {
+      "category": "epoxy",
+      "label": "Bathroom with reglazed tub & sink",
+      "alt": "Bathroom with reglazed tub & sink",
+      "src": null
+    },
     "concrete-polishing-sealing-1": {
       "category": "concrete",
       "label": "Polished concrete floor",

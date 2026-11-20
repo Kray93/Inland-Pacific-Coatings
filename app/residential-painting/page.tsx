@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
+import { ProductsUsed, Faq, type FaqItem } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { Photo, PhotoGallery } from "../components/Photo";
 import { ServiceCards } from "../components/ServiceCards";
 import type { PhotoKey } from "../lib/photos";
 import { getCategory, type SubService } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "Residential Painting",
+  title: "Residential Painting in Coeur d'Alene & Spokane",
   description:
-    "Residential interior and exterior house painting, cabinet painting, and deck and fence staining in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Interior and exterior house painting, cabinet painting, and deck & fence staining with Sherwin-Williams paints in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/residential-painting" },
 };
 
 const category = { ...getCategory("painting"), image: "painting-residential" as PhotoKey, shortTitle: "Residential Painting" };
@@ -94,6 +97,29 @@ const process = [
   { title: "Walkthrough & cleanup", text: "We review the work with you, touch up anything you notice, and leave the site clean." },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    q: "What paint do you use?",
+    a: "We use Sherwin-Williams paints, matched to each surface \u2014 Emerald, Duration, and SuperPaint for walls, ceilings, and exteriors, Emerald Urethane Trim Enamel for cabinets, doors, and trim, and SuperDeck for decks and fences.",
+  },
+  {
+    q: "When is the best time to paint a house exterior in the Inland Northwest?",
+    a: "Exterior painting in Coeur d'Alene and Spokane is typically done from late spring through early fall, when temperatures and humidity are within the paint manufacturer's application range. We schedule around the forecast so paint has time to cure.",
+  },
+  {
+    q: "Can you paint my kitchen cabinets instead of replacing them?",
+    a: "Yes. Cabinet painting is one of the most cost-effective ways to update a kitchen. We clean, degloss, and prime the boxes, doors, and drawers, then finish them with a durable cabinet-grade enamel such as Sherwin-Williams Emerald Urethane Trim Enamel.",
+  },
+  {
+    q: "Do I need to move furniture before you paint?",
+    a: "No. Our crew moves and covers furniture, protects floors, and cleans up at the end of each day. We just ask that you put away small valuables and fragile items.",
+  },
+  {
+    q: "How often should a deck or fence be re-stained?",
+    a: "It depends on sun exposure and the type of stain, but most decks and fences in the Inland Northwest benefit from cleaning and a fresh coat every few years to keep the wood protected.",
+  },
+];
+
 export default function ResidentialPaintingPage() {
   return (
     <main>
@@ -175,6 +201,10 @@ export default function ResidentialPaintingPage() {
           "painting-deck-fence",
         ]}
       />
+
+      <ProductsUsed brand={brands.sherwinWilliams} heading="Painted with Sherwin-Williams." />
+
+      <Faq items={faqs} />
 
       <CtaBand text="Tell us what you'd like painted — rooms, the exterior, cabinets, or a fence — and we'll follow up with a free estimate." />
     </main>

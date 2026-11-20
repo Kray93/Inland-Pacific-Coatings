@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Asphalt Resurfacing | Inland Pacific Coatings",
+  title: "Asphalt Resurfacing in Coeur d'Alene & Spokane",
   description:
     "Decorative asphalt resurfacing to refresh worn, faded, and outdated surfaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/asphalt-resurfacing" },
 };
 
 export default function AsphaltResurfacingPage() {

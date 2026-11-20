@@ -4,7 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Epoxy Countertops in Spokane, WA",
   description:
-    "Inland Pacific Coatings provides epoxy countertop refinishing, resurfacing, and custom epoxy countertops in Spokane, Washington and surrounding areas."
+    "Inland Pacific Coatings provides epoxy countertop refinishing, resurfacing, and custom epoxy countertops in Spokane, Washington and surrounding areas.",
+  alternates: { canonical: "/epoxy-countertops/spokane" },
 };
 
 export default function SpokaneCountertopsPage() {

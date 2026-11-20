@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { Photo, PhotoGallery } from "../components/Photo";
 import { ServiceCards } from "../components/ServiceCards";
 import { getCategory } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "Epoxy Floors & Countertops",
+  title: "Epoxy Floors & Countertops in Coeur d'Alene & Spokane",
   description:
     "Custom epoxy countertops, flake and metallic epoxy floors, decorative floors, hardwood overlays, and seamless showers in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/epoxy" },
 };
 
 const category = getCategory("epoxy");
@@ -68,6 +71,8 @@ export default function EpoxyPage() {
           </div>
         </div>
       </section>
+
+      <ProductsUsed brand={brands.leggari} heading="Leggari metallic epoxy systems." />
 
       <CtaBand />
     </main>

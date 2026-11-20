@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Outdoor Concrete Coatings | Inland Pacific Coatings",
+  title: "Patio & Outdoor Concrete Coatings | Coeur d'Alene & Spokane",
   description:
     "Outdoor concrete coatings including resin-bound gravel and texture deck systems for patios, walkways, and pool areas in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/outdoor-concrete-coatings" },
 };
 
 export default function OutdoorConcreteCoatingsPage() {
@@ -134,6 +137,8 @@ export default function OutdoorConcreteCoatingsPage() {
     </div>
   </div>
 </section>
+
+      <ProductsUsed brand={brands.directColors} heading="Exterior stains & sealers from Direct Colors." className="alt-section" />
 
       <section className="section">
         <div className="container article">
