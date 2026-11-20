@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { ServiceChooser } from "./components/ServiceChooser";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ipcepoxy.com"),
@@ -11,15 +12,15 @@ export const metadata: Metadata = {
     apple: "/ipc-logo.jpg",
   },
   title: {
-    default: "Inland Pacific Coatings | Premium Epoxy Countertops & Decorative Floors",
+    default: "Inland Pacific Coatings | Concrete Coatings, Epoxy, Painting & Roof Rejuvenation",
     template: "%s | Inland Pacific Coatings"
   },
   description:
-    "Inland Pacific Coatings creates premium epoxy countertop refinishing, decorative floors, garage floor systems, and outdoor surfaces in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Inland Pacific Coatings provides concrete coating and sealing, epoxy floors and countertops, interior and exterior painting, and roof rejuvenation in Coeur d'Alene, Spokane, and the Inland Northwest.",
   openGraph: {
     title: "Inland Pacific Coatings",
     description:
-      "Premium epoxy countertops, decorative floors, and outdoor surface systems for the Inland Northwest.",
+      "Concrete coatings, epoxy floors & countertops, painting, and roof rejuvenation for the Inland Northwest.",
     url: "https://ipcepoxy.com",
     siteName: "Inland Pacific Coatings",
     type: "website",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Inland Pacific Coatings",
     description:
-      "Premium epoxy countertops, decorative floors, and outdoor surface systems for the Inland Northwest.",
+      "Concrete coatings, epoxy floors & countertops, painting, and roof rejuvenation for the Inland Northwest.",
     images: ["https://ipcepoxy.com/epoxy-hero-2.png"]
   }
 };
@@ -48,7 +49,7 @@ const localBusinessSchema = {
   "url": "https://ipcepoxy.com",
   "telephone": "+1-208-714-1951",
   "email": "kevin@ipcepoxy.com",
-  "description": "Premium epoxy countertops, decorative floors, garage floor systems, and outdoor surface coatings serving Coeur d'Alene, Spokane, and the Inland Northwest.",
+  "description": "Concrete coating and sealing, epoxy floors and countertops, painting, and roof rejuvenation serving Coeur d'Alene, Spokane, and the Inland Northwest.",
   "image": "https://ipcepoxy.com/ipc-logo.jpg",
   "priceRange": "$$",
   "address": {
@@ -84,7 +85,11 @@ const localBusinessSchema = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hardwood Overlay Floors" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Metallic Epoxy Floors" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outdoor Concrete Coatings" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Polishing & Sealing" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Polishing & Sealing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Painting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Painting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cabinet Painting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Rejuvenation" } }
     ]
   },
   "sameAs": [
@@ -121,6 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <ServiceChooser />
       </body>
     </html>
   );

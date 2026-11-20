@@ -13,6 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // High-priority service pages
   const primaryServices = [
+    "/concrete-coatings",
+    "/epoxy",
+    "/painting",
+    "/roof-rejuvenation",
     "/epoxy-countertops",
     "/garage-floor-coatings",
     "/decorative-epoxy-floors",

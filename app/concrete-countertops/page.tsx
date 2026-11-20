@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PhotoGallery } from "../components/Photo";
+import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
   title: "Concrete Countertops | Inland Pacific Coatings",
@@ -35,6 +37,8 @@ export default function ConcreteCountertopsPage() {
           </div>
         </div>
       </section>
+
+      <PhotoGallery ids={servicePhotos("concrete-countertops")} eyebrow="Project Gallery" className="gallery-tight" />
 
       <section className="section alt-section">
         <div className="container article">

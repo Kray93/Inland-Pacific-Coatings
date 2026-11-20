@@ -1,0 +1,412 @@
+{
+  "categories": {
+    "concrete": "Concrete Coating & Sealing",
+    "epoxy": "Epoxy",
+    "painting": "Painting",
+    "roof": "Roof Rejuvenation"
+  },
+  "photos": {
+    "hub-concrete": {
+      "category": "concrete",
+      "label": "Sealed & coated concrete patio",
+      "alt": "Sealed & coated concrete patio",
+      "src": null
+    },
+    "hub-epoxy": {
+      "category": "epoxy",
+      "label": "High-gloss epoxy garage floor",
+      "alt": "High-gloss epoxy garage floor",
+      "src": null
+    },
+    "hub-painting": {
+      "category": "painting",
+      "label": "Freshly painted home exterior",
+      "alt": "Freshly painted home exterior",
+      "src": null
+    },
+    "hub-roof": {
+      "category": "roof",
+      "label": "Rejuvenated asphalt shingle roof",
+      "alt": "Rejuvenated asphalt shingle roof",
+      "src": null
+    },
+    "epoxy-countertops-1": {
+      "category": "epoxy",
+      "label": "Kitchen island epoxy countertop",
+      "alt": "Kitchen island epoxy countertop",
+      "src": null
+    },
+    "epoxy-countertops-2": {
+      "category": "epoxy",
+      "label": "Marble-look bathroom vanity",
+      "alt": "Marble-look bathroom vanity",
+      "src": null
+    },
+    "epoxy-countertops-3": {
+      "category": "epoxy",
+      "label": "Bar top with metallic veining",
+      "alt": "Bar top with metallic veining",
+      "src": null
+    },
+    "garage-floor-coatings-1": {
+      "category": "epoxy",
+      "label": "Finished garage floor with flake system",
+      "alt": "Finished garage floor with flake system",
+      "src": null
+    },
+    "garage-floor-coatings-2": {
+      "category": "epoxy",
+      "label": "Garage floor before coating",
+      "alt": "Garage floor before coating",
+      "src": null
+    },
+    "garage-floor-coatings-3": {
+      "category": "epoxy",
+      "label": "Workshop floor after coating",
+      "alt": "Workshop floor after coating",
+      "src": null
+    },
+    "flake-epoxy-floors-1": {
+      "category": "epoxy",
+      "label": "Full-broadcast flake floor",
+      "alt": "Full-broadcast flake floor",
+      "src": null
+    },
+    "flake-epoxy-floors-2": {
+      "category": "epoxy",
+      "label": "Flake blend close-up",
+      "alt": "Flake blend close-up",
+      "src": null
+    },
+    "flake-epoxy-floors-3": {
+      "category": "epoxy",
+      "label": "Flake floor in a home gym",
+      "alt": "Flake floor in a home gym",
+      "src": null
+    },
+    "metallic-epoxy-floors-1": {
+      "category": "epoxy",
+      "label": "Metallic epoxy basement floor",
+      "alt": "Metallic epoxy basement floor",
+      "src": null
+    },
+    "metallic-epoxy-floors-2": {
+      "category": "epoxy",
+      "label": "Metallic swirl close-up",
+      "alt": "Metallic swirl close-up",
+      "src": null
+    },
+    "metallic-epoxy-floors-3": {
+      "category": "epoxy",
+      "label": "Metallic floor in a showroom",
+      "alt": "Metallic floor in a showroom",
+      "src": null
+    },
+    "decorative-epoxy-floors-1": {
+      "category": "epoxy",
+      "label": "Decorative epoxy living space",
+      "alt": "Decorative epoxy living space",
+      "src": null
+    },
+    "decorative-epoxy-floors-2": {
+      "category": "epoxy",
+      "label": "Custom color epoxy floor",
+      "alt": "Custom color epoxy floor",
+      "src": null
+    },
+    "decorative-epoxy-floors-3": {
+      "category": "epoxy",
+      "label": "Commercial lobby epoxy floor",
+      "alt": "Commercial lobby epoxy floor",
+      "src": null
+    },
+    "hardwood-overlay-floors-1": {
+      "category": "epoxy",
+      "label": "Wood-look overlay floor",
+      "alt": "Wood-look overlay floor",
+      "src": null
+    },
+    "hardwood-overlay-floors-2": {
+      "category": "epoxy",
+      "label": "Wood grain texture close-up",
+      "alt": "Wood grain texture close-up",
+      "src": null
+    },
+    "hardwood-overlay-floors-3": {
+      "category": "epoxy",
+      "label": "Overlay in an open-concept room",
+      "alt": "Overlay in an open-concept room",
+      "src": null
+    },
+    "shower-systems-1": {
+      "category": "epoxy",
+      "label": "Seamless shower walls",
+      "alt": "Seamless shower walls",
+      "src": null
+    },
+    "shower-systems-2": {
+      "category": "epoxy",
+      "label": "Grout-free shower close-up",
+      "alt": "Grout-free shower close-up",
+      "src": null
+    },
+    "shower-systems-3": {
+      "category": "epoxy",
+      "label": "Bathroom with seamless shower",
+      "alt": "Bathroom with seamless shower",
+      "src": null
+    },
+    "concrete-polishing-sealing-1": {
+      "category": "concrete",
+      "label": "Polished concrete floor",
+      "alt": "Polished concrete floor",
+      "src": null
+    },
+    "concrete-polishing-sealing-2": {
+      "category": "concrete",
+      "label": "Sealed concrete sheen close-up",
+      "alt": "Sealed concrete sheen close-up",
+      "src": null
+    },
+    "concrete-polishing-sealing-3": {
+      "category": "concrete",
+      "label": "Polished floor in a commercial space",
+      "alt": "Polished floor in a commercial space",
+      "src": null
+    },
+    "concrete-staining-1": {
+      "category": "concrete",
+      "label": "Acid-stained concrete floor",
+      "alt": "Acid-stained concrete floor",
+      "src": null
+    },
+    "concrete-staining-2": {
+      "category": "concrete",
+      "label": "Stain color variation close-up",
+      "alt": "Stain color variation close-up",
+      "src": null
+    },
+    "concrete-staining-3": {
+      "category": "concrete",
+      "label": "Stained concrete patio",
+      "alt": "Stained concrete patio",
+      "src": null
+    },
+    "concrete-resurfacing-1": {
+      "category": "concrete",
+      "label": "Resurfaced driveway",
+      "alt": "Resurfaced driveway",
+      "src": null
+    },
+    "concrete-resurfacing-2": {
+      "category": "concrete",
+      "label": "Worn concrete before resurfacing",
+      "alt": "Worn concrete before resurfacing",
+      "src": null
+    },
+    "concrete-resurfacing-3": {
+      "category": "concrete",
+      "label": "Resurfaced front walkway",
+      "alt": "Resurfaced front walkway",
+      "src": null
+    },
+    "outdoor-concrete-coatings-1": {
+      "category": "concrete",
+      "label": "Coated backyard patio",
+      "alt": "Coated backyard patio",
+      "src": null
+    },
+    "outdoor-concrete-coatings-2": {
+      "category": "concrete",
+      "label": "Coated front walkway",
+      "alt": "Coated front walkway",
+      "src": null
+    },
+    "outdoor-concrete-coatings-3": {
+      "category": "concrete",
+      "label": "Coated pool surround",
+      "alt": "Coated pool surround",
+      "src": null
+    },
+    "texture-deck-1": {
+      "category": "concrete",
+      "label": "Textured pool deck",
+      "alt": "Textured pool deck",
+      "src": null
+    },
+    "texture-deck-2": {
+      "category": "concrete",
+      "label": "Slip-resistant texture close-up",
+      "alt": "Slip-resistant texture close-up",
+      "src": null
+    },
+    "texture-deck-3": {
+      "category": "concrete",
+      "label": "Coated upper deck",
+      "alt": "Coated upper deck",
+      "src": null
+    },
+    "resin-bound-gravel-1": {
+      "category": "concrete",
+      "label": "Resin-bound gravel driveway",
+      "alt": "Resin-bound gravel driveway",
+      "src": null
+    },
+    "resin-bound-gravel-2": {
+      "category": "concrete",
+      "label": "Resin-bound stone close-up",
+      "alt": "Resin-bound stone close-up",
+      "src": null
+    },
+    "resin-bound-gravel-3": {
+      "category": "concrete",
+      "label": "Resin-bound garden path",
+      "alt": "Resin-bound garden path",
+      "src": null
+    },
+    "concrete-wall-coatings-1": {
+      "category": "concrete",
+      "label": "Decorative concrete feature wall",
+      "alt": "Decorative concrete feature wall",
+      "src": null
+    },
+    "concrete-wall-coatings-2": {
+      "category": "concrete",
+      "label": "Wall texture close-up",
+      "alt": "Wall texture close-up",
+      "src": null
+    },
+    "concrete-wall-coatings-3": {
+      "category": "concrete",
+      "label": "Coated fireplace surround",
+      "alt": "Coated fireplace surround",
+      "src": null
+    },
+    "concrete-countertops-1": {
+      "category": "concrete",
+      "label": "Concrete kitchen countertop",
+      "alt": "Concrete kitchen countertop",
+      "src": null
+    },
+    "concrete-countertops-2": {
+      "category": "concrete",
+      "label": "Integral sink detail",
+      "alt": "Integral sink detail",
+      "src": null
+    },
+    "concrete-countertops-3": {
+      "category": "concrete",
+      "label": "Outdoor kitchen concrete counter",
+      "alt": "Outdoor kitchen concrete counter",
+      "src": null
+    },
+    "asphalt-resurfacing-1": {
+      "category": "concrete",
+      "label": "Resurfaced asphalt driveway",
+      "alt": "Resurfaced asphalt driveway",
+      "src": null
+    },
+    "asphalt-resurfacing-2": {
+      "category": "concrete",
+      "label": "Decorative asphalt pattern",
+      "alt": "Decorative asphalt pattern",
+      "src": null
+    },
+    "asphalt-resurfacing-3": {
+      "category": "concrete",
+      "label": "Asphalt before resurfacing",
+      "alt": "Asphalt before resurfacing",
+      "src": null
+    },
+    "painting-interior": {
+      "category": "painting",
+      "label": "Interior living room repaint",
+      "alt": "Interior living room repaint",
+      "src": null
+    },
+    "painting-exterior": {
+      "category": "painting",
+      "label": "Exterior siding & trim",
+      "alt": "Exterior siding & trim",
+      "src": null
+    },
+    "painting-cabinets": {
+      "category": "painting",
+      "label": "Painted kitchen cabinets",
+      "alt": "Painted kitchen cabinets",
+      "src": null
+    },
+    "painting-deck-fence": {
+      "category": "painting",
+      "label": "Stained cedar fence & deck",
+      "alt": "Stained cedar fence & deck",
+      "src": null
+    },
+    "painting-commercial": {
+      "category": "painting",
+      "label": "Commercial office repaint",
+      "alt": "Commercial office repaint",
+      "src": null
+    },
+    "painting-trim-doors": {
+      "category": "painting",
+      "label": "Front door & trim detail",
+      "alt": "Front door & trim detail",
+      "src": null
+    },
+    "painting-prep": {
+      "category": "painting",
+      "label": "Surface prep & masking",
+      "alt": "Surface prep & masking",
+      "src": null
+    },
+    "painting-color": {
+      "category": "painting",
+      "label": "Color consultation samples",
+      "alt": "Color consultation samples",
+      "src": null
+    },
+    "painting-before-after": {
+      "category": "painting",
+      "label": "Exterior before & after",
+      "alt": "Exterior before & after",
+      "src": null
+    },
+    "roof-before": {
+      "category": "roof",
+      "label": "Weathered shingles before treatment",
+      "alt": "Weathered shingles before treatment",
+      "src": null
+    },
+    "roof-after": {
+      "category": "roof",
+      "label": "Same roof after rejuvenation",
+      "alt": "Same roof after rejuvenation",
+      "src": null
+    },
+    "roof-application": {
+      "category": "roof",
+      "label": "Rejuvenation spray application",
+      "alt": "Rejuvenation spray application",
+      "src": null
+    },
+    "roof-closeup": {
+      "category": "roof",
+      "label": "Shingle granule close-up",
+      "alt": "Shingle granule close-up",
+      "src": null
+    },
+    "roof-home": {
+      "category": "roof",
+      "label": "Finished home with rejuvenated roof",
+      "alt": "Finished home with rejuvenated roof",
+      "src": null
+    },
+    "roof-inspection": {
+      "category": "roof",
+      "label": "Roof inspection & assessment",
+      "alt": "Roof inspection & assessment",
+      "src": null
+    }
+  }
+}

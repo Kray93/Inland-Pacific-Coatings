@@ -10,7 +10,7 @@ export function Footer() {
           <div className="footer-logo-name">Inland Pacific Coatings</div>
           <div className="footer-tagline">Northwest Heritage • Luxury Surfaces</div>
           <p className="footer-blurb">
-            Premium epoxy countertops, decorative floors, and surface systems
+            Concrete coatings, epoxy, painting, and roof rejuvenation
             for the Inland Northwest.
           </p>
         </div>
@@ -19,11 +19,12 @@ export function Footer() {
         <div className="footer-col">
           <div className="footer-col-heading">Services</div>
           <ul className="footer-links">
-            <li><Link href="/epoxy-countertops">Epoxy Countertops</Link></li>
+            <li><Link href="/concrete-coatings">Concrete Coating &amp; Sealing</Link></li>
+            <li><Link href="/epoxy">Epoxy Floors &amp; Countertops</Link></li>
+            <li><Link href="/painting">Painting</Link></li>
+            <li><Link href="/roof-rejuvenation">Roof Rejuvenation</Link></li>
             <li><Link href="/garage-floor-coatings">Garage Floor Coatings</Link></li>
-            <li><Link href="/decorative-epoxy-floors">Decorative Epoxy Floors</Link></li>
-            <li><Link href="/hardwood-overlay-floors">Hardwood Overlay Floors</Link></li>
-            <li><Link href="/outdoor-concrete-coatings">Outdoor Concrete</Link></li>
+            <li><Link href="/epoxy-countertops">Epoxy Countertops</Link></li>
             <li><Link href="/services">View All Services</Link></li>
           </ul>
         </div>
