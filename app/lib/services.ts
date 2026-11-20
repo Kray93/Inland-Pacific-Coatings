@@ -262,7 +262,11 @@ export const estimateOptions: { label: string; hint: string }[] = [
   },
   {
     label: "Epoxy Floors & Countertops",
-    hint: "Floor, countertop, shower, or tub/sink reglazing? Where is it, about how big, and do you have a look in mind (flake, metallic, marble, wood-look)?",
+    hint: "Floor, countertop, or shower? Where is it, about how big, and do you have a look in mind (flake, metallic, marble, wood-look)?",
+  },
+  {
+    label: "Tub & Sink Reglazing",
+    hint: "How many tubs and/or sinks, what material (porcelain, fiberglass, acrylic), and any chips, cracks, or stains we should know about?",
   },
   {
     label: "Residential Painting",
