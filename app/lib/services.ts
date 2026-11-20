@@ -6,8 +6,6 @@ export type SubService = {
   description: string;
   href: string;
   image: PhotoKey;
-  /** Estimate-form dropdown entries for this service (defaults to its title) */
-  formOptions?: string[];
 };
 
 export type CoreCategory = {
@@ -20,8 +18,6 @@ export type CoreCategory = {
   href: string;
   image: PhotoKey;
   services: SubService[];
-  /** Overrides the estimate-form entries for the whole category */
-  formOptions?: string[];
 };
 
 export const coreCategories: CoreCategory[] = [
@@ -74,6 +70,14 @@ export const coreCategories: CoreCategory[] = [
           "Concrete staining that enhances the natural character of the slab with tone, variation, and a more design-forward appearance.",
         href: "/concrete-staining",
         image: "concrete-staining-1",
+      },
+      {
+        subtitle: "Decorative Concrete",
+        title: "Acid Stain Concrete",
+        description:
+          "Rich, marbled earth-tone color that reacts with the slab itself for a one-of-a-kind, natural-stone look indoors or out.",
+        href: "/acid-stain-concrete",
+        image: "acid-stain-concrete-1",
       },
       {
         subtitle: "Slip-Resistant System",
@@ -134,7 +138,6 @@ export const coreCategories: CoreCategory[] = [
           "Custom epoxy countertops with stone-inspired movement, rich depth, and a refined finish designed to elevate kitchens, baths, bars, and feature spaces.",
         href: "/epoxy-countertops",
         image: "epoxy-countertops-1",
-        formOptions: ["Epoxy Countertop Refinishing & Resurfacing", "Custom Epoxy Countertops"],
       },
       {
         subtitle: "Durable Texture System",
@@ -195,7 +198,6 @@ export const coreCategories: CoreCategory[] = [
           "Interior and exterior house painting, cabinet painting, and deck & fence staining — careful prep, clean lines, and a crew that respects your home.",
         href: "/residential-painting",
         image: "painting-residential",
-        formOptions: ["Interior Painting", "Exterior Painting", "Cabinet Painting", "Deck & Fence Staining"],
       },
       {
         subtitle: "Businesses & Properties",
@@ -204,11 +206,6 @@ export const coreCategories: CoreCategory[] = [
           "Offices, retail, multi-unit properties, and shops painted on a schedule that keeps your business running — evenings and weekends available.",
         href: "/commercial-painting",
         image: "painting-commercial",
-        formOptions: [
-          "Commercial Painting – Offices & Retail",
-          "Commercial Painting – Multi-Unit & Rentals",
-          "Commercial Painting – Shops & Warehouses",
-        ],
       },
     ],
   },
@@ -221,7 +218,6 @@ export const coreCategories: CoreCategory[] = [
       "A spray-applied treatment that restores flexibility to aging asphalt shingles, helping your existing roof last longer and delaying the cost of replacement.",
     href: "/roof-rejuvenation",
     image: "hub-roof",
-    formOptions: ["Roof Rejuvenation / Roof Assessment"],
     services: [
       {
         subtitle: "Step One",
@@ -255,12 +251,33 @@ export function getCategory(key: CoreCategory["key"]): CoreCategory {
   return coreCategories.find((c) => c.key === key)!;
 }
 
-/** Grouped options for the estimate form's project-type dropdown, generated from the catalog above. */
-export function estimateOptionGroups(): { label: string; options: string[] }[] {
-  return coreCategories.flatMap((c) =>
-    // Painting is split into Residential and Commercial groups
-    c.key === "painting"
-      ? c.services.map((svc) => ({ label: svc.title, options: svc.formOptions ?? [svc.title] }))
-      : [{ label: c.title, options: c.formOptions ?? c.services.flatMap((svc) => svc.formOptions ?? [svc.title]) }]
-  );
-}
+/**
+ * Main-service choices for the estimate form, each with a hint for the project description box.
+ * Kept short on purpose: visitors pick a main service and describe the details.
+ */
+export const estimateOptions: { label: string; hint: string }[] = [
+  {
+    label: "Concrete Coating & Sealing",
+    hint: "What surface is it (garage, patio, driveway, pool deck, basement)? About how big, and what finish are you hoping for?",
+  },
+  {
+    label: "Epoxy Floors & Countertops",
+    hint: "Floor or countertop? Where is it, about how big, and do you have a look in mind (flake, metallic, marble, wood-look)?",
+  },
+  {
+    label: "Residential Painting",
+    hint: "Interior, exterior, cabinets, or deck/fence? Which rooms or areas, and roughly how large is the home?",
+  },
+  {
+    label: "Commercial Painting",
+    hint: "What type of property (office, retail, multi-unit, shop)? Approximate size, and any scheduling needs (evenings, weekends)?",
+  },
+  {
+    label: "Roof Rejuvenation",
+    hint: "About how old is the roof, what type of shingles, and have you noticed granule loss, curling, or leaks?",
+  },
+  {
+    label: "Other / Not Sure",
+    hint: "Tell us about the space and what you'd like done, and we'll recommend the right service.",
+  },
+];

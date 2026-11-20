@@ -176,8 +176,8 @@
     },
     "concrete-staining-1": {
       "category": "concrete",
-      "label": "Acid-stained concrete floor",
-      "alt": "Acid-stained concrete floor",
+      "label": "Stained concrete floor",
+      "alt": "Stained concrete floor",
       "src": null
     },
     "concrete-staining-2": {
@@ -190,6 +190,24 @@
       "category": "concrete",
       "label": "Stained concrete patio",
       "alt": "Stained concrete patio",
+      "src": null
+    },
+    "acid-stain-concrete-1": {
+      "category": "concrete",
+      "label": "Acid-stained living room floor",
+      "alt": "Acid-stained living room floor",
+      "src": null
+    },
+    "acid-stain-concrete-2": {
+      "category": "concrete",
+      "label": "Marbled acid stain close-up",
+      "alt": "Marbled acid stain close-up",
+      "src": null
+    },
+    "acid-stain-concrete-3": {
+      "category": "concrete",
+      "label": "Acid-stained covered patio",
+      "alt": "Acid-stained covered patio",
       "src": null
     },
     "concrete-resurfacing-1": {

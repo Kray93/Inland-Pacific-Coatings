@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { estimateOptionGroups } from "../lib/services";
+import { estimateOptions } from "../lib/services";
 
 export function ContactForm() {
   const [projects, setProjects] = useState([
@@ -105,19 +105,17 @@ export function ContactForm() {
                   <option value="" disabled>
                     Select a project type
                   </option>
-                  {estimateOptionGroups().map((group) => (
-                    <optgroup key={group.label} label={group.label}>
-                      {group.options.map((opt) => (
-                        <option key={opt}>{opt}</option>
-                      ))}
-                    </optgroup>
+                  {estimateOptions.map((opt) => (
+                    <option key={opt.label}>{opt.label}</option>
                   ))}
-                  <option>Other / Not Sure</option>
                 </select>
 
                 <textarea
                   name="project_details[]"
-                  placeholder="Tell us about your project"
+                  placeholder={
+                    estimateOptions.find((o) => o.label === project.projectType)?.hint ??
+                    "Tell us about your project"
+                  }
                   value={project.details}
                   onChange={(e) =>
                     updateProject(index, "details", e.target.value)
