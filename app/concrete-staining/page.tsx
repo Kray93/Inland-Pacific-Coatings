@@ -125,6 +125,7 @@ export default function ConcreteStainingPage() {
   <div className="container article">
     <h2>Related Services</h2>
     <div className="pill-list">
+      <Link href="/acid-stain-concrete" className="pill">Acid Stain Concrete</Link>
       <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
       <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
       <Link href="/hardwood-overlay-floors" className="pill">Hardwood Overlay Floors</Link>

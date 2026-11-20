@@ -1174,3 +1174,17 @@ textarea {
 .dark-section .card li {
   color: var(--ink-soft);
 }
+
+/* Painting overview: residential vs commercial */
+.split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 36px;
+}
+
+@media (max-width: 960px) {
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+}

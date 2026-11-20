@@ -14,8 +14,8 @@
     },
     "hub-epoxy": {
       "category": "epoxy",
-      "label": "High-gloss epoxy garage floor",
-      "alt": "High-gloss epoxy garage floor",
+      "label": "Metallic epoxy statement floor",
+      "alt": "Metallic epoxy statement floor",
       "src": null
     },
     "hub-painting": {
@@ -176,8 +176,8 @@
     },
     "concrete-staining-1": {
       "category": "concrete",
-      "label": "Acid-stained concrete floor",
-      "alt": "Acid-stained concrete floor",
+      "label": "Stained concrete floor",
+      "alt": "Stained concrete floor",
       "src": null
     },
     "concrete-staining-2": {
@@ -190,6 +190,24 @@
       "category": "concrete",
       "label": "Stained concrete patio",
       "alt": "Stained concrete patio",
+      "src": null
+    },
+    "acid-stain-concrete-1": {
+      "category": "concrete",
+      "label": "Acid-stained living room floor",
+      "alt": "Acid-stained living room floor",
+      "src": null
+    },
+    "acid-stain-concrete-2": {
+      "category": "concrete",
+      "label": "Marbled acid stain close-up",
+      "alt": "Marbled acid stain close-up",
+      "src": null
+    },
+    "acid-stain-concrete-3": {
+      "category": "concrete",
+      "label": "Acid-stained covered patio",
+      "alt": "Acid-stained covered patio",
       "src": null
     },
     "concrete-resurfacing-1": {
@@ -406,6 +424,36 @@
       "category": "roof",
       "label": "Roof inspection & assessment",
       "alt": "Roof inspection & assessment",
+      "src": null
+    },
+    "painting-residential": {
+      "category": "painting",
+      "label": "Freshly painted family home",
+      "alt": "Freshly painted family home",
+      "src": null
+    },
+    "painting-commercial-retail": {
+      "category": "painting",
+      "label": "Painted retail storefront",
+      "alt": "Painted retail storefront",
+      "src": null
+    },
+    "painting-commercial-multifamily": {
+      "category": "painting",
+      "label": "Repainted apartment building",
+      "alt": "Repainted apartment building",
+      "src": null
+    },
+    "painting-commercial-warehouse": {
+      "category": "painting",
+      "label": "Painted shop & warehouse interior",
+      "alt": "Painted shop & warehouse interior",
+      "src": null
+    },
+    "painting-commercial-afterhours": {
+      "category": "painting",
+      "label": "After-hours office repaint",
+      "alt": "After-hours office repaint",
       "src": null
     }
   }
