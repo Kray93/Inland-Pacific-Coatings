@@ -104,11 +104,28 @@ export function ContactForm() {
                   <option value="" disabled>
                     Select a project type
                   </option>
-                  <option>Epoxy Countertop Refinishing & Resurfacing</option>
-                  <option>Custom Epoxy Countertops</option>
-                  <option>Decorative Epoxy Floors</option>
-                  <option>Garage Floor Systems</option>
-                  <option>Outdoor Surface Systems</option>
+                  <optgroup label="Concrete Coating & Sealing">
+                    <option>Concrete Sealing / Polishing</option>
+                    <option>Outdoor Concrete Coatings (patio, walkway, pool deck)</option>
+                    <option>Concrete Resurfacing / Staining</option>
+                  </optgroup>
+                  <optgroup label="Epoxy">
+                    <option>Garage Floor Systems</option>
+                    <option>Decorative / Metallic Epoxy Floors</option>
+                    <option>Epoxy Countertop Refinishing & Resurfacing</option>
+                    <option>Custom Epoxy Countertops</option>
+                  </optgroup>
+                  <optgroup label="Painting">
+                    <option>Interior Painting</option>
+                    <option>Exterior Painting</option>
+                    <option>Cabinet Painting</option>
+                    <option>Deck & Fence Staining</option>
+                    <option>Commercial Painting</option>
+                  </optgroup>
+                  <optgroup label="Roof">
+                    <option>Roof Rejuvenation</option>
+                  </optgroup>
+                  <option>Other / Not Sure</option>
                 </select>
 
                 <textarea

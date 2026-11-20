@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { coreCategories } from '../lib/services';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +19,16 @@ export function Header() {
           </div>
           <div className="brand-copy">
             <strong>Inland Pacific Coatings</strong>
-            <span>Northwest Heritage • Luxury Surfaces</span>
+            <span>Coatings • Paint • Roofs</span>
           </div>
         </Link>
 
         {/* Desktop navigation */}
         <nav className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
+          {coreCategories.map((c) => (
+            <Link key={c.key} href={c.href}>{c.shortTitle}</Link>
+          ))}
+          <Link href="/services">All Services</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/contact" className="nav-cta">Free Estimate</Link>
         </nav>
@@ -50,8 +53,13 @@ export function Header() {
             <Link href="/" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
               Home
             </Link>
+            {coreCategories.map((c) => (
+              <Link key={c.key} href={c.href} className="mobile-menu-link" onClick={() => setIsOpen(false)}>
+                {c.title}
+              </Link>
+            ))}
             <Link href="/services" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
-              Services
+              All Services
             </Link>
             <Link href="/contact" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
               Contact

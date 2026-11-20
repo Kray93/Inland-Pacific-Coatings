@@ -1,49 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CoreServiceTiles } from "./components/CoreServiceTiles";
+import { PhotoGallery } from "./components/Photo";
+import { ServiceCards } from "./components/ServiceCards";
+import { getCategory } from "./lib/services";
 
-const services = [
-  {
-    subtitle: "Hero Service",
-    title: "Epoxy Countertops",
-    description:
-      "Custom epoxy countertops with stone-inspired movement, rich depth, and a refined finish designed to elevate kitchens, baths, bars, and feature spaces.",
-    href: "/epoxy-countertops",
-  },
-  {
-    subtitle: "Signature Finish",
-    title: "Hardwood Overlay Floors",
-    description:
-      "A distinctive flooring system that captures the warmth and visual texture of wood with the durability and seamless performance of a coated surface.",
-    href: "/hardwood-overlay-floors",
-  },
-  {
-    subtitle: "Premium Surface Design",
-    title: "Concrete Countertops",
-    description:
-      "Handcrafted concrete countertops with natural texture, architectural character, and a custom finish for standout interiors.",
-    href: "/concrete-countertops",
-  },
-  {
-    subtitle: "Residential Performance",
-    title: "Garage Floor Coatings",
-    description:
-      "Durable garage floor coatings designed to create a cleaner, better-protected, and more finished space for everyday use.",
-    href: "/garage-floor-coatings",
-  },
-  {
-    subtitle: "Luxury Interior Floors",
-    title: "Decorative Epoxy Floors",
-    description:
-      "Custom decorative floor finishes designed to bring movement, style, and a seamless high-end look to interior spaces.",
-    href: "/decorative-epoxy-floors",
-  },
-  {
-    subtitle: "Exterior Surface Systems",
-    title: "Outdoor Concrete Coatings",
-    description:
-      "Protective outdoor concrete coatings for patios, walkways, and exterior spaces designed for performance and presentation.",
-    href: "/outdoor-concrete-coatings",
-  },
+const signatureServices = [
+  ...getCategory("epoxy").services.slice(0, 2),
+  getCategory("concrete").services[1],
+  getCategory("painting").services[1],
+  getCategory("epoxy").services[5],
+  getCategory("roof").services[2],
 ];
 
 const coreValues = [
@@ -87,21 +54,20 @@ export default function HomePage() {
           <div>
             <div className="badge">Serving Coeur d&apos;Alene, Spokane, and the Inland Northwest</div>
             <h1 style={{ marginTop: 18 }}>
-              premium decorative & protective concrete / surface coatings for luxury northwest living.
+              premium concrete coatings, epoxy, painting & roof rejuvenation for northwest living.
             </h1>
             <p className="lead" style={{ marginTop: 22, maxWidth: 760 }}>
-              Inland Pacific Coatings creates elevated interior and exterior surfaces with countertop refinishing,
-              custom epoxy counters, decorative floors, garage systems, resin-bound gravel, and texture deck
-              solutions.
+              Inland Pacific Coatings protects and elevates every surface of your home — concrete sealing and
+              coatings, epoxy floors and countertops, interior and exterior painting, and roof rejuvenation.
             </p>
             <div className="button-row">
               <Link href="/contact" className="btn btn-primary">Request a Free Estimate</Link>
-              <Link href="/epoxy-countertops" className="btn btn-secondary">Explore Countertop Services</Link>
+              <a href="#find-your-service" className="btn btn-secondary">Find Your Service</a>
             </div>
             <div className="stat-grid">
               <div className="stat">
                 <strong style={{ color: "var(--gold-soft)", display: "block", fontSize: 22 }}>Signature Focus</strong>
-                <p>Countertops, floors, and outdoor surfaces</p>
+                <p>Concrete, epoxy, paint, and roofs</p>
               </div>
               <div className="stat">
                 <strong style={{ color: "var(--gold-soft)", display: "block", fontSize: 22 }}>Luxury Market</strong>
@@ -133,11 +99,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section" id="find-your-service">
+        <div className="container">
+          <div className="eyebrow">Our Core Services</div>
+          <h2 className="services-heading">What kind of coating are you looking for today?</h2>
+          <p className="lead services-lead">
+            Pick a service to see our work, how the process goes, and what to expect.
+          </p>
+          <div style={{ marginTop: 36 }}>
+            <CoreServiceTiles />
+          </div>
+        </div>
+      </section>
+
       <section className="section alt-section">
         <div className="container mission">
           <div className="eyebrow">Our Mission</div>
           <p>
-            To provide homeowners and businesses with beautiful, long-lasting epoxy surfaces through expert
+            To provide homeowners and businesses with beautiful, long-lasting coated and painted surfaces through expert
             preparation, skilled craftsmanship, and reliable service while delivering a professional experience from
             consultation to installation.
           </p>
@@ -151,24 +130,11 @@ export default function HomePage() {
             Surface systems designed for high-end homes and standout spaces.
           </h2>
           <p className="lead services-lead">
-            Inland Pacific Coatings focuses on premium epoxy and decorative surface systems that balance design,
-            durability, and professional execution.
+            From epoxy and concrete systems to paint and roof care, every service balances design, durability, and
+            professional execution.
           </p>
 
-          <div className="card-grid services-grid services-grid-spacing">
-            {services.map((service, index) => (
-              <article key={service.title} className={`card ${index === 0 ? "featured" : ""}`}>
-                <div className="eyebrow">{service.subtitle}</div>
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-card-description">{service.description}</p>
-                <div className="service-card-link-wrap">
-                  <Link href={service.href} className="service-card-link">
-                    Learn more →
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
+          <ServiceCards services={signatureServices} />
 
          <div className="services-button-row">
            <Link href="/services" className="btn services-view-all">
@@ -177,6 +143,20 @@ export default function HomePage() {
          </div>
         </div>
       </section>
+
+      <PhotoGallery
+        className="dark-section"
+        heading="Recent projects across the Inland Northwest."
+        layout="grid"
+        ids={[
+          "garage-floor-coatings-1",
+          "painting-exterior",
+          "roof-after",
+          "epoxy-countertops-1",
+          "outdoor-concrete-coatings-1",
+          "metallic-epoxy-floors-1",
+        ]}
+      />
 
       <section className="section alt-section">
         <div className="container two-col">
@@ -188,14 +168,13 @@ export default function HomePage() {
               residential projects, refined remodels, and future commercial expansion.
             </p>
             <p>
-              From countertop resurfacing to decorative floors and outdoor living surfaces, each installation is
-              designed to elevate the space while standing up to real-world use in the Inland Northwest.
+              From concrete and epoxy to fresh paint and rejuvenated roofs, each project is designed to elevate the space while standing up to real-world use in the Inland Northwest.
             </p>
           </div>
           <div className="card-grid">
             {[
               "Northwest heritage brand with luxury presentation",
-              "Countertop refinishing, custom epoxy counters, decorative floors, and garage systems",
+              "Concrete coating & sealing, epoxy floors and countertops, painting, and roof rejuvenation",
               "Professional prep standards built around shot blasting and grinding when surface conditions require it",
               "Serving Coeur d'Alene, Spokane, and surrounding Inland Northwest communities"
             ].map((item) => (
@@ -226,8 +205,8 @@ export default function HomePage() {
          <div className="container vision">
           <div className="eyebrow">Our Vision</div>
           <p>
-            To become the leading epoxy surface company in the Pacific Northwest, recognized for exceptional
-            craftsmanship, innovative countertops and decorative flooring, and trusted service across residential and
+            To become the leading coatings company in the Pacific Northwest, recognized for exceptional
+            craftsmanship, innovative surface systems, and trusted service across residential and
             commercial markets.
           </p>
         </div>
