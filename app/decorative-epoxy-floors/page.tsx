@@ -104,13 +104,13 @@ export default function DecorativeFloorsPage() {
 
             <article className="card">
               <div className="eyebrow">Refined Finish</div>
-              <h3 className="service-card-title">Concrete Staining</h3>
+              <h3 className="service-card-title">Acid Stain Concrete</h3>
               <p className="service-card-description">
                 A more natural decorative option that adds tone, variation, and character while preserving the look of
                 concrete.
               </p>
               <div className="service-card-link-wrap">
-                <Link href="/concrete-staining" className="service-card-link">
+                <Link href="/acid-stain-concrete" className="service-card-link">
                   Learn more →
                 </Link>
               </div>

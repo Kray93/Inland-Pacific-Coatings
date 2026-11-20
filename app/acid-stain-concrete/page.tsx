@@ -6,7 +6,7 @@ import { servicePhotos } from "../lib/photos";
 export const metadata: Metadata = {
   title: "Acid Stain Concrete",
   description:
-    "Acid-stained concrete floors and patios in Coeur d'Alene, Spokane, and the Inland Northwest. Rich, marbled, one-of-a-kind earth-tone color that becomes part of the concrete.",
+    "Acid stain and concrete staining for floors and patios in Coeur d'Alene, Spokane, and the Inland Northwest. Rich, marbled, one-of-a-kind earth-tone color that becomes part of the concrete.",
 };
 
 export default function AcidStainConcretePage() {
@@ -67,6 +67,10 @@ export default function AcidStainConcretePage() {
             <li>Restaurants, retail, breweries, and showrooms</li>
             <li>Shops and studios that want character without a thick coating</li>
           </ul>
+          <p>
+            Acid stain is a more understated choice than metallic epoxy or decorative overlays. It enhances the
+            concrete you have instead of covering it, for a surface that feels natural and integrated into the space.
+          </p>
         </div>
       </section>
 
@@ -108,7 +112,6 @@ export default function AcidStainConcretePage() {
         <div className="container article">
           <h2>Related Services</h2>
           <div className="pill-list">
-            <Link href="/concrete-staining" className="pill">Concrete Staining</Link>
             <Link href="/concrete-polishing-sealing" className="pill">Concrete Polishing & Sealing</Link>
             <Link href="/concrete-resurfacing" className="pill">Concrete Resurfacing</Link>
             <Link href="/outdoor-concrete-coatings" className="pill">Outdoor Concrete Coatings</Link>

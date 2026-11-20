@@ -64,14 +64,6 @@ export const coreCategories: CoreCategory[] = [
         image: "concrete-resurfacing-1",
       },
       {
-        subtitle: "Natural Finish",
-        title: "Concrete Staining",
-        description:
-          "Concrete staining that enhances the natural character of the slab with tone, variation, and a more design-forward appearance.",
-        href: "/concrete-staining",
-        image: "concrete-staining-1",
-      },
-      {
         subtitle: "Decorative Concrete",
         title: "Acid Stain Concrete",
         description:

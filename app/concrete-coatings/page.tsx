@@ -41,7 +41,7 @@ export default function ConcreteCoatingsPage() {
           "garage-floor-coatings-1",
           "outdoor-concrete-coatings-2",
           "concrete-resurfacing-2",
-          "concrete-staining-3",
+          "acid-stain-concrete-3",
           "texture-deck-1",
           "resin-bound-gravel-3",
         ]}
