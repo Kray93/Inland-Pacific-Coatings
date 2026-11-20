@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Concrete Resurfacing | Inland Pacific Coatings",
+  title: "Concrete Resurfacing in Coeur d'Alene & Spokane",
   description:
     "Concrete resurfacing to restore and upgrade worn, outdated surfaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/concrete-resurfacing" },
 };
 
 export default function ConcreteResurfacingPage() {

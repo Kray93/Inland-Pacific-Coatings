@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Shower Systems | Inland Pacific Coatings",
+  title: "Seamless Shower Systems in Coeur d'Alene & Spokane",
   description:
     "Seamless decorative shower systems for bathrooms across Coeur d'Alene, Spokane, and the Inland Northwest. Modern, durable, and custom-finished.",
+  alternates: { canonical: "/shower-systems" },
 };
 
 export default function ShowerSystemsPage() {

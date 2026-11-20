@@ -1,13 +1,39 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed, Faq, type FaqItem } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Epoxy Countertops | Refinishing, Resurfacing & Custom Countertop Finishes",
+  title: "Epoxy Countertops in Coeur d'Alene & Spokane",
   description:
-    "Custom epoxy countertop refinishing, resurfacing, and stone-inspired countertop finishes for homes and businesses in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Custom epoxy countertop refinishing and metallic, marble-look countertops using Leggari epoxy systems in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/epoxy-countertops" },
 };
+
+const faqs: FaqItem[] = [
+  {
+    q: "Can epoxy go over my existing countertops?",
+    a: "In most cases, yes. Laminate, solid surface, and many other existing countertops can be coated once they are properly sanded and cleaned. Granite and marble need their sealer removed first. We evaluate your countertops during the estimate to confirm they're a good candidate.",
+  },
+  {
+    q: "What products do you use for epoxy countertops?",
+    a: "We install Leggari metallic epoxy countertop systems \u2014 primer, epoxy, and metallic pigments \u2014 finished with a protective top coat for added durability and scratch resistance.",
+  },
+  {
+    q: "How much do epoxy countertops cost compared to replacement?",
+    a: "Epoxy countertop refinishing typically costs less than tearing out and replacing countertops with new stone, and it avoids much of the demolition. Pricing depends on square footage, design, and edge details, so we provide a free written estimate.",
+  },
+  {
+    q: "How do I care for epoxy countertops?",
+    a: "Clean with mild soap and water and a soft cloth, avoid abrasive pads and harsh chemicals, use cutting boards, and set hot pans on trivets rather than directly on the surface.",
+  },
+  {
+    q: "Do you install epoxy countertops in Coeur d'Alene and Spokane?",
+    a: "Yes. Inland Pacific Coatings installs epoxy countertops throughout Coeur d'Alene, Post Falls, Hayden, Spokane, Liberty Lake, Sandpoint, and the surrounding Inland Northwest.",
+  },
+];
 
 export default function EpoxyCountertopsPage() {
   return (
@@ -199,6 +225,10 @@ export default function EpoxyCountertopsPage() {
             </div>
         </div>
       </section>
+
+      <ProductsUsed brand={brands.leggari} heading="Leggari metallic epoxy countertop systems." className="alt-section" />
+
+      <Faq items={faqs} className="" />
 
       <section className="section">
         <div className="container article">

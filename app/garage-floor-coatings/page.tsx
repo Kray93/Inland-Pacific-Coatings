@@ -1,13 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Faq, type FaqItem } from "../components/SeoBlocks";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Garage Floor Coatings | Inland Pacific Coatings",
+  title: "Garage Floor Coatings in Coeur d'Alene & Spokane",
   description:
     "Premium garage floor coatings for homes, shops, and hardworking spaces across Coeur d'Alene, Spokane, and the Inland Northwest. Durable, clean, and built to last.",
+  alternates: { canonical: "/garage-floor-coatings" },
 };
+
+const faqs: FaqItem[] = [
+  {
+    q: "How long does a garage floor coating take?",
+    a: "Most residential garages are completed in a few days, including grinding, repairs, coating, and cure time. We'll give you a schedule and let you know when the floor is ready for foot traffic and vehicles.",
+  },
+  {
+    q: "Why do you grind the concrete first?",
+    a: "Grinding opens up the concrete surface so the coating can form a strong mechanical bond. Skipping proper prep is the most common reason garage coatings peel or lift.",
+  },
+  {
+    q: "Will a coated garage floor be slippery?",
+    a: "A full-broadcast flake system adds texture, and additional slip-resistant additives can be included in the top coat for areas that see water and snow.",
+  },
+  {
+    q: "Does a garage floor coating hold up to Inland Northwest winters?",
+    a: "A properly installed coating helps protect concrete from water, road salt, and de-icing chemicals that cause pitting and spalling \u2014 one of the biggest reasons homeowners in Coeur d'Alene and Spokane coat their garage floors.",
+  },
+];
 
 export default function GarageFloorCoatingsPage() {
   return (
@@ -155,6 +176,8 @@ export default function GarageFloorCoatingsPage() {
     </div>
   </div>
 </section>
+
+      <Faq items={faqs} className="" />
 
       <section className="section">
         <div className="container article">

@@ -5,9 +5,10 @@ import { ServiceCards } from "../components/ServiceCards";
 import { coreCategories } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "All Services",
+  title: "Coating, Painting & Roof Services | Coeur d'Alene & Spokane",
   description:
     "Concrete coating and sealing, epoxy floors and countertops, interior and exterior painting, and roof rejuvenation across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {

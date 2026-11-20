@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { Photo } from "../components/Photo";
 import { getCategory } from "../lib/services";
 
 export const metadata: Metadata = {
-  title: "Painting",
+  title: "Painting Contractor in Coeur d'Alene & Spokane",
   description:
     "Residential and commercial painting in Coeur d'Alene, Spokane, and the Inland Northwest — interior, exterior, cabinets, deck and fence staining, offices, retail, and multi-unit properties.",
+  alternates: { canonical: "/painting" },
 };
 
 const category = getCategory("painting");
@@ -48,6 +51,8 @@ export default function PaintingPage() {
           </div>
         </div>
       </section>
+
+      <ProductsUsed brand={brands.sherwinWilliams} heading="Painted with Sherwin-Williams." />
 
       <CtaBand text="Not sure where your project fits? Tell us about it and we'll follow up with a free estimate." />
     </main>

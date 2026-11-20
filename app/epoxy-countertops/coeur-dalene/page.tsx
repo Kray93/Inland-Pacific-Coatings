@@ -4,7 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Epoxy Countertops in Coeur d'Alene, ID",
   description:
-    "Epoxy countertop refinishing, resurfacing, and custom epoxy countertops in Coeur d'Alene, Idaho. Premium stone-style finishes for kitchens, vanities, bars, and more."
+    "Epoxy countertop refinishing, resurfacing, and custom epoxy countertops in Coeur d'Alene, Idaho. Premium stone-style finishes for kitchens, vanities, bars, and more.",
+  alternates: { canonical: "/epoxy-countertops/coeur-dalene" },
 };
 
 export default function CoeurDAleneCountertopsPage() {

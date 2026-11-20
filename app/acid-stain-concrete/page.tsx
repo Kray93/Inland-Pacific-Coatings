@@ -1,13 +1,39 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed, Faq, type FaqItem } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Acid Stain Concrete",
+  title: "Acid Stain Concrete in Coeur d'Alene & Spokane",
   description:
-    "Acid stain and concrete staining for floors and patios in Coeur d'Alene, Spokane, and the Inland Northwest. Rich, marbled, one-of-a-kind earth-tone color that becomes part of the concrete.",
+    "Acid-stained concrete floors and patios using Direct Colors EverStain and DecoGel acid stains in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/acid-stain-concrete" },
 };
+
+const faqs: FaqItem[] = [
+  {
+    q: "What colors does acid stain come in?",
+    a: "Acid stain produces translucent earth tones \u2014 browns, tans, amber, terra cotta, and blue-green. Because it reacts with the concrete, the final color varies from slab to slab, which is what gives acid-stained floors their marbled, one-of-a-kind look.",
+  },
+  {
+    q: "Will acid stain hide cracks and patches?",
+    a: "No. Acid stain is translucent, so existing cracks, patches, and wear will still show. If you need a uniform look, we may recommend resurfacing before staining or a decorative epoxy system instead.",
+  },
+  {
+    q: "What acid stain do you use?",
+    a: "We use Direct Colors EverStain, a water-based metallic-salt acid stain, and DecoGel gel acid stain for walls and vertical concrete. Each job is finished with a matched Direct Colors sealer.",
+  },
+  {
+    q: "Can acid stain be used outdoors?",
+    a: "Yes. Acid stain works on patios, porches, and walkways as well as interior floors. Exterior concrete gets a sealer suited to outdoor exposure \u2014 Direct Colors recommends solvent-based EasySeal outdoors and low-odor AcquaSeal indoors.",
+  },
+  {
+    q: "How do I maintain an acid-stained floor?",
+    a: "The color itself is part of the concrete, but the sealer on top wears over time. Sweep and damp-mop regularly, and plan to refresh the sealer periodically \u2014 more often on exterior and high-traffic areas.",
+  },
+];
 
 export default function AcidStainConcretePage() {
   return (
@@ -118,6 +144,10 @@ export default function AcidStainConcretePage() {
           </div>
         </div>
       </section>
+
+      <ProductsUsed brand={brands.directColors} heading="Direct Colors EverStain acid stain & sealers." className="alt-section" />
+
+      <Faq items={faqs} className="" />
 
       <section className="section">
         <div className="container article">

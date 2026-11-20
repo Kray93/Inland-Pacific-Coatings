@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Flake Epoxy Floors | Inland Pacific Coatings",
+  title: "Flake Epoxy Floors in Coeur d'Alene & Spokane",
   description:
     "Durable flake epoxy floors for garages, shops, utility spaces, and high-traffic areas across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/flake-epoxy-floors" },
 };
 
 export default function FlakeEpoxyFloorsPage() {

@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductsUsed } from "../components/SeoBlocks";
+import { brands } from "../lib/products";
 import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Decorative Epoxy Floors | Inland Pacific Coatings",
+  title: "Decorative Epoxy Floors in Coeur d'Alene & Spokane",
   description:
     "Premium decorative epoxy floor systems for homes, showrooms, basements, and statement spaces across Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/decorative-epoxy-floors" },
 };
 
 export default function DecorativeFloorsPage() {
@@ -145,6 +148,8 @@ export default function DecorativeFloorsPage() {
     </div>
   </div>
 </section>
+
+      <ProductsUsed brand={brands.leggari} heading="Decorative finishes built on Leggari epoxy." className="alt-section" />
 
       <section className="section">
         <div className="container article">

@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CoreServiceTiles } from "./components/CoreServiceTiles";
 import { PhotoGallery } from "./components/Photo";
 import { ServiceCards } from "./components/ServiceCards";
+import { BrandStrip } from "./components/SeoBlocks";
 import { coreCategories } from "./lib/services";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const featuredHrefs = [
   "/epoxy-countertops",
@@ -190,7 +196,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <BrandStrip />
+
+      <section className="section alt-section">
         <div className="container">
           <div className="eyebrow">Core Values</div>
           <h2 style={{ marginTop: 14 }}>What Inland Pacific Coatings stands for.</h2>

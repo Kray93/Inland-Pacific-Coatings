@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Resin-Bound Gravel | Inland Pacific Coatings",
+  title: "Resin-Bound Gravel in Coeur d'Alene & Spokane",
   description:
     "Resin-bound gravel systems for patios, walkways, driveways, and outdoor spaces in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/resin-bound-gravel" },
 };
 
 export default function ResinBoundGravelPage() {

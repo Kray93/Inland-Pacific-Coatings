@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Texture Deck Coatings | Inland Pacific Coatings",
+  title: "Texture Deck & Pool Deck Coatings | Coeur d'Alene & Spokane",
   description:
     "Slip-resistant texture deck coatings for patios, pool decks, and outdoor surfaces in Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/texture-deck" },
 };
 
 export default function TextureDeckPage() {

@@ -4,9 +4,10 @@ import { PhotoGallery } from "../components/Photo";
 import { servicePhotos } from "../lib/photos";
 
 export const metadata: Metadata = {
-  title: "Hardwood Overlay Floors | Inland Pacific Coatings",
+  title: "Hardwood Overlay Floors in Coeur d'Alene & Spokane",
   description:
     "Hardwood overlay floors that combine the natural look of wood with the durability of a coated surface system. Serving Coeur d'Alene, Spokane, and the Inland Northwest.",
+  alternates: { canonical: "/hardwood-overlay-floors" },
 };
 
 export default function HardwoodOverlayFloorsPage() {
