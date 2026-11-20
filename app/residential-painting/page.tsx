@@ -11,7 +11,7 @@ import { getCategory, type SubService } from "../lib/services";
 export const metadata: Metadata = {
   title: "Residential Painting in Coeur d'Alene & Spokane",
   description:
-    "Interior and exterior house painting, cabinet painting, and deck & fence staining with Sherwin-Williams paints in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Interior and exterior house painting, cabinet painting, and deck & fence staining with premium paints in Coeur d'Alene, Spokane, and the Inland Northwest.",
   alternates: { canonical: "/residential-painting" },
 };
 
@@ -100,7 +100,7 @@ const process = [
 const faqs: FaqItem[] = [
   {
     q: "What paint do you use?",
-    a: "We use Sherwin-Williams paints, matched to each surface \u2014 Emerald, Duration, and SuperPaint for walls, ceilings, and exteriors, Emerald Urethane Trim Enamel for cabinets, doors, and trim, and SuperDeck for decks and fences.",
+    a: "We use premium, professional-grade paints matched to each surface \u2014 top-tier interior and exterior lines for walls, ceilings, and siding, a urethane-modified enamel for cabinets, doors, and trim, and penetrating stains for decks and fences.",
   },
   {
     q: "When is the best time to paint a house exterior in the Inland Northwest?",
@@ -108,7 +108,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "Can you paint my kitchen cabinets instead of replacing them?",
-    a: "Yes. Cabinet painting is one of the most cost-effective ways to update a kitchen. We clean, degloss, and prime the boxes, doors, and drawers, then finish them with a durable cabinet-grade enamel such as Sherwin-Williams Emerald Urethane Trim Enamel.",
+    a: "Yes. Cabinet painting is one of the most cost-effective ways to update a kitchen. We clean, degloss, and prime the boxes, doors, and drawers, then finish them with a durable cabinet-grade enamel such as a urethane-modified trim and cabinet enamel.",
   },
   {
     q: "Do I need to move furniture before you paint?",
@@ -202,7 +202,7 @@ export default function ResidentialPaintingPage() {
         ]}
       />
 
-      <ProductsUsed brand={brands.sherwinWilliams} heading="Painted with Sherwin-Williams." />
+      <ProductsUsed brand={brands.paint} heading="Premium, professional-grade paints." />
 
       <Faq items={faqs} />
 

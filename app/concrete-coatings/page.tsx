@@ -101,7 +101,7 @@ export default function ConcreteCoatingsPage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.directColors} heading="Direct Colors acid stains & sealers." />
+      <ProductsUsed brand={brands.stainAndSeal} heading="Professional acid stains & sealers." />
 
       <CtaBand />
     </main>

@@ -52,7 +52,7 @@ export default function PaintingPage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.sherwinWilliams} heading="Painted with Sherwin-Williams." />
+      <ProductsUsed brand={brands.paint} heading="Premium, professional-grade paints." />
 
       <CtaBand text="Not sure where your project fits? Tell us about it and we'll follow up with a free estimate." />
     </main>

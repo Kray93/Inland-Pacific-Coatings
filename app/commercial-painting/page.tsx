@@ -11,7 +11,7 @@ import { getCategory, type SubService } from "../lib/services";
 export const metadata: Metadata = {
   title: "Commercial Painting in Coeur d'Alene & Spokane",
   description:
-    "Commercial painting for offices, retail, multi-unit properties, and shops with Sherwin-Williams coatings. Evening and weekend scheduling in Coeur d'Alene and Spokane.",
+    "Commercial painting for offices, retail, multi-unit properties, and shops with premium commercial coatings. Evening and weekend scheduling in Coeur d'Alene and Spokane.",
   alternates: { canonical: "/commercial-painting" },
 };
 
@@ -107,7 +107,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "Do you offer zero-VOC paint for occupied buildings?",
-    a: "Yes. We use Sherwin-Williams commercial products such as ProMar 200 Zero VOC, which is well suited to offices, rentals, healthcare, and other occupied spaces.",
+    a: "Yes. We use professional zero-VOC commercial paints, which are well suited to offices, rentals, healthcare, and other occupied spaces.",
   },
   {
     q: "Can you paint and coat the floors on the same project?",
@@ -187,7 +187,7 @@ export default function CommercialPaintingPage() {
         ]}
       />
 
-      <ProductsUsed brand={brands.sherwinWilliams} heading="Commercial-grade Sherwin-Williams coatings." />
+      <ProductsUsed brand={brands.paint} heading="Commercial-grade coatings." />
 
       <Faq items={faqs} />
 

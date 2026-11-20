@@ -136,7 +136,7 @@ export default function ConcretePolishingSealingPage() {
   </div>
 </section>
 
-      <ProductsUsed brand={brands.directColors} heading="Concrete sealers from Direct Colors." className="alt-section" />
+      <ProductsUsed brand={brands.stainAndSeal} heading="Professional concrete sealers." className="alt-section" />
 
       <section className="section">
         <div className="container article">

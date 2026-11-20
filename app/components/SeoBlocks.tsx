@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { brands, type Brand } from "../lib/products";
+import type { Brand } from "../lib/products";
 
-/** "Products we use" section for a single manufacturer. */
+/** "Materials & methods" section describing the materials used for a service (no brand names). */
 export function ProductsUsed({
   brand,
   heading,
@@ -14,8 +14,8 @@ export function ProductsUsed({
   return (
     <section className={`section ${className}`}>
       <div className="container">
-        <div className="eyebrow">Products We Use</div>
-        <h2 style={{ marginTop: 14 }}>{heading ?? `Installed with ${brand.name} products.`}</h2>
+        <div className="eyebrow">Materials &amp; Methods</div>
+        <h2 style={{ marginTop: 14 }}>{heading ?? "Professional-grade materials."}</h2>
         <p className="lead" style={{ marginTop: 18, maxWidth: 760 }}>{brand.intro}</p>
         <div className="card-grid product-grid" style={{ marginTop: 32 }}>
           {brand.products.map((p) => (
@@ -26,35 +26,29 @@ export function ProductsUsed({
             </article>
           ))}
         </div>
-        <p className="product-source">
-          Product information summarized from{" "}
-          <a href={brand.url} target="_blank" rel="noopener noreferrer">
-            {brand.name}
-          </a>
-          . Product names are trademarks of their respective owners.
-        </p>
+
       </div>
     </section>
   );
 }
 
-/** Compact strip of the four manufacturers, linking to the service each one supports. */
+/** Compact strip of material types, linking to the service each one supports. */
 export function BrandStrip({ className = "" }: { className?: string }) {
   const items = [
-    { brand: brands.sherwinWilliams, label: "Interior & exterior paint", href: "/painting" },
-    { brand: brands.leggari, label: "Metallic epoxy countertops & floors", href: "/epoxy" },
-    { brand: brands.directColors, label: "Acid stains & concrete sealers", href: "/concrete-coatings" },
-    { brand: brands.hydrasoy, label: "Soy-based roof rejuvenation", href: "/roof-rejuvenation" },
+    { title: "Premium Paints", label: "Interior, exterior, cabinet & commercial coatings", href: "/painting" },
+    { title: "Metallic Epoxy", label: "Countertop & floor systems with urethane top coats", href: "/epoxy" },
+    { title: "Acid Stains & Sealers", label: "Matched stain-and-seal systems for concrete", href: "/concrete-coatings" },
+    { title: "Soy-Based Roof Treatment", label: "Restores flexibility to aging asphalt shingles", href: "/roof-rejuvenation" },
   ];
   return (
     <section className={`section ${className}`}>
       <div className="container">
-        <div className="eyebrow">Products We Trust</div>
+        <div className="eyebrow">Our Materials</div>
         <h2 style={{ marginTop: 14 }}>Professional-grade materials on every job.</h2>
         <div className="card-grid brand-grid" style={{ marginTop: 32 }}>
           {items.map((i) => (
-            <Link key={i.brand.name} href={i.href} className="card brand-card">
-              <span className="brand-name">{i.brand.name}</span>
+            <Link key={i.title} href={i.href} className="card brand-card">
+              <span className="brand-name">{i.title}</span>
               <span className="brand-label">{i.label}</span>
             </Link>
           ))}

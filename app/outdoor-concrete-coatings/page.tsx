@@ -138,7 +138,7 @@ export default function OutdoorConcreteCoatingsPage() {
   </div>
 </section>
 
-      <ProductsUsed brand={brands.directColors} heading="Exterior stains & sealers from Direct Colors." className="alt-section" />
+      <ProductsUsed brand={brands.stainAndSeal} heading="Exterior stains & sealers built for Northwest weather." className="alt-section" />
 
       <section className="section">
         <div className="container article">

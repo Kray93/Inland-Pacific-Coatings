@@ -149,7 +149,7 @@ export default function DecorativeFloorsPage() {
   </div>
 </section>
 
-      <ProductsUsed brand={brands.leggari} heading="Decorative finishes built on Leggari epoxy." className="alt-section" />
+      <ProductsUsed brand={brands.metallicEpoxy} heading="Decorative finishes built on professional epoxy." className="alt-section" />
 
       <section className="section">
         <div className="container article">

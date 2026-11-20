@@ -27,7 +27,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "What coating do you use?",
-    a: "We use Cardinal Paint's 6G00 series reglazing coating, a two-component aliphatic polyurethane that Cardinal formulates for reglazing porcelain and plastic fixtures.",
+    a: "We use an industrial-grade, two-component aliphatic polyurethane reglazing coating formulated specifically for porcelain and plastic fixtures.",
   },
   {
     q: "How soon can I use my tub after reglazing?",
@@ -115,7 +115,7 @@ export default function TubSinkReglazingPage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.cardinal} heading="Reglazed with Cardinal Paint coatings." className="alt-section" />
+      <ProductsUsed brand={brands.reglazing} heading="Industrial-grade reglazing coatings." className="alt-section" />
 
       <Faq items={faqs} heading="Tub & sink reglazing questions." className="" />
 
