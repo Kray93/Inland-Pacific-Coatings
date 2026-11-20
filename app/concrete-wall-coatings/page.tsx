@@ -119,7 +119,7 @@ export default function ConcreteWallCoatingsPage() {
     <h2>Related Services</h2>
     <div className="pill-list">
       <Link href="/shower-systems" className="pill">Shower Systems</Link>
-      <Link href="/concrete-staining" className="pill">Concrete Staining</Link>
+      <Link href="/acid-stain-concrete" className="pill">Acid Stain Concrete</Link>
       <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
     </div>
   </div>

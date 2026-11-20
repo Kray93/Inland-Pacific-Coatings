@@ -124,7 +124,7 @@ export default function HardwoodOverlayFloorsPage() {
     <div className="pill-list">
       <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
       <Link href="/decorative-epoxy-floors" className="pill">Decorative Epoxy Floors</Link>
-      <Link href="/concrete-staining" className="pill">Concrete Staining</Link>
+      <Link href="/acid-stain-concrete" className="pill">Acid Stain Concrete</Link>
     </div>
   </div>
 </section>

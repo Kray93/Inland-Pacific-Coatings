@@ -38,7 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const secondaryServices = [
     "/concrete-polishing-sealing",
     "/concrete-resurfacing",
-    "/concrete-staining",
     "/acid-stain-concrete",
     "/concrete-wall-coatings",
     "/asphalt-resurfacing",
