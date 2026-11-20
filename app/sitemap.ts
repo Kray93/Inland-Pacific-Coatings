@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asphalt-resurfacing",
     "/resin-bound-gravel",
     "/shower-systems",
+    "/tub-sink-reglazing",
     "/texture-deck",
   ].map((path) => ({
     url: `${base}${path}`,

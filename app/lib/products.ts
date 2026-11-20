@@ -99,4 +99,24 @@ export const brands = {
       },
     ],
   },
+  cardinal: {
+    name: "Cardinal Paint",
+    url: "http://www.cardinalpaint.com/markets/reglazing/",
+    intro:
+      "For tub and sink reglazing we use Cardinal Paint's reglazing coatings — industrial-grade finishes made to refresh bathroom fixtures instead of replacing them.",
+    products: [
+      {
+        name: "6G00 Series Reglazing Coating",
+        text: "An aliphatic, two-component polyurethane that Cardinal formulates for reglazing porcelain and plastic fixtures.",
+      },
+      {
+        name: "Low-VOC formulation",
+        text: "Cardinal describes its coatings as low-VOC and compliant with environmental regulations; the 6G00 series is listed at 250 g/L VOC.",
+      },
+      {
+        name: "Proper surface prep",
+        text: "Cardinal stresses that the fixture must be prepared to accept the coating — the cleaning, repair, and etching steps we never skip.",
+      },
+    ],
+  },
 } satisfies Record<string, Brand>;

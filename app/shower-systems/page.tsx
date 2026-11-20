@@ -111,6 +111,7 @@ export default function ShowerSystemsPage() {
   <div className="container article">
     <h2>Related Services</h2>
     <div className="pill-list">
+      <Link href="/tub-sink-reglazing" className="pill">Tub & Sink Reglazing</Link>
       <Link href="/concrete-wall-coatings" className="pill">Concrete Wall Coatings</Link>
       <Link href="/epoxy-countertops" className="pill">Epoxy Countertops</Link>
       <Link href="/concrete-countertops" className="pill">Concrete Countertops</Link>
