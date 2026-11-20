@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/concrete-coatings",
     "/epoxy",
     "/painting",
+    "/residential-painting",
+    "/commercial-painting",
     "/roof-rejuvenation",
     "/epoxy-countertops",
     "/garage-floor-coatings",

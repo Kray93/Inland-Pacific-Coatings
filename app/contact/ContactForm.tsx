@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { estimateOptionGroups } from "../lib/services";
 
 export function ContactForm() {
   const [projects, setProjects] = useState([
@@ -104,27 +105,13 @@ export function ContactForm() {
                   <option value="" disabled>
                     Select a project type
                   </option>
-                  <optgroup label="Concrete Coating & Sealing">
-                    <option>Concrete Sealing / Polishing</option>
-                    <option>Outdoor Concrete Coatings (patio, walkway, pool deck)</option>
-                    <option>Concrete Resurfacing / Staining</option>
-                  </optgroup>
-                  <optgroup label="Epoxy">
-                    <option>Garage Floor Systems</option>
-                    <option>Decorative / Metallic Epoxy Floors</option>
-                    <option>Epoxy Countertop Refinishing & Resurfacing</option>
-                    <option>Custom Epoxy Countertops</option>
-                  </optgroup>
-                  <optgroup label="Painting">
-                    <option>Interior Painting</option>
-                    <option>Exterior Painting</option>
-                    <option>Cabinet Painting</option>
-                    <option>Deck & Fence Staining</option>
-                    <option>Commercial Painting</option>
-                  </optgroup>
-                  <optgroup label="Roof">
-                    <option>Roof Rejuvenation</option>
-                  </optgroup>
+                  {estimateOptionGroups().map((group) => (
+                    <optgroup key={group.label} label={group.label}>
+                      {group.options.map((opt) => (
+                        <option key={opt}>{opt}</option>
+                      ))}
+                    </optgroup>
+                  ))}
                   <option>Other / Not Sure</option>
                 </select>
 

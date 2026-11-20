@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CategoryHero, CtaBand } from "../components/CategoryHero";
 import { Photo, PhotoGallery } from "../components/Photo";
 import { ServiceCards } from "../components/ServiceCards";
@@ -7,7 +8,7 @@ import { getCategory } from "../lib/services";
 export const metadata: Metadata = {
   title: "Concrete Coating & Sealing",
   description:
-    "Concrete sealing, polishing, staining, resurfacing, and exterior coatings for patios, driveways, walkways, and pool decks in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Garage floor coatings, concrete sealing, polishing, staining, resurfacing, and exterior coatings for patios, driveways, walkways, and pool decks in Coeur d'Alene, Spokane, and the Inland Northwest.",
 };
 
 const category = getCategory("concrete");
@@ -17,7 +18,7 @@ export default function ConcreteCoatingsPage() {
     <main>
       <CategoryHero
         category={category}
-        heading="Concrete coating & sealing built for Northwest winters."
+        heading="Garage floors & concrete coatings built for Northwest winters."
       />
 
       <section className="section" id="services">
@@ -37,16 +38,45 @@ export default function ConcreteCoatingsPage() {
         heading="Recent concrete projects"
         layout="grid"
         ids={[
+          "garage-floor-coatings-1",
           "outdoor-concrete-coatings-2",
           "concrete-resurfacing-2",
           "concrete-staining-3",
           "texture-deck-1",
           "resin-bound-gravel-3",
-          "concrete-polishing-sealing-3",
         ]}
       />
 
       <section className="section">
+        <div className="container two-col">
+          <div>
+            <div className="eyebrow">Garage Floor Transformations</div>
+            <h2 style={{ marginTop: 14 }}>From stained slab to showroom.</h2>
+            <p className="lead" style={{ marginTop: 20 }}>
+              Our most-requested service. A full-broadcast flake system hides dust, adds traction, and stands up to hot
+              tires, road salt, and everyday spills.
+            </p>
+            <ul>
+              <li>Diamond grinding for a proper mechanical bond</li>
+              <li>Crack and spall repair before coating</li>
+              <li>Full-broadcast decorative flake</li>
+              <li>UV-stable protective topcoat</li>
+            </ul>
+            <div className="button-row">
+              <Link href="/garage-floor-coatings" className="btn btn-primary">Explore Garage Floors</Link>
+            </div>
+          </div>
+          <div>
+            <div className="photo-grid photo-grid-2">
+              <Photo id="garage-floor-coatings-2" ratio="4 / 5" />
+              <Photo id="garage-floor-coatings-1" ratio="4 / 5" />
+            </div>
+            <p className="photo-note">Before &amp; after: bare concrete vs. finished flake system.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt-section">
         <div className="container two-col">
           <div>
             <div className="eyebrow">Why Seal Concrete?</div>

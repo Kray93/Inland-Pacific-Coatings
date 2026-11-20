@@ -21,10 +21,10 @@ export function Footer() {
           <ul className="footer-links">
             <li><Link href="/concrete-coatings">Concrete Coating &amp; Sealing</Link></li>
             <li><Link href="/epoxy">Epoxy Floors &amp; Countertops</Link></li>
-            <li><Link href="/painting">Painting</Link></li>
+            <li><Link href="/residential-painting">Residential Painting</Link></li>
+            <li><Link href="/commercial-painting">Commercial Painting</Link></li>
             <li><Link href="/roof-rejuvenation">Roof Rejuvenation</Link></li>
             <li><Link href="/garage-floor-coatings">Garage Floor Coatings</Link></li>
-            <li><Link href="/epoxy-countertops">Epoxy Countertops</Link></li>
             <li><Link href="/services">View All Services</Link></li>
           </ul>
         </div>

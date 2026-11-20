@@ -6,6 +6,8 @@ export type SubService = {
   description: string;
   href: string;
   image: PhotoKey;
+  /** Estimate-form dropdown entries for this service (defaults to its title) */
+  formOptions?: string[];
 };
 
 export type CoreCategory = {
@@ -18,6 +20,8 @@ export type CoreCategory = {
   href: string;
   image: PhotoKey;
   services: SubService[];
+  /** Overrides the estimate-form entries for the whole category */
+  formOptions?: string[];
 };
 
 export const coreCategories: CoreCategory[] = [
@@ -25,12 +29,20 @@ export const coreCategories: CoreCategory[] = [
     key: "concrete",
     title: "Concrete Coating & Sealing",
     shortTitle: "Concrete",
-    tagline: "Patios, driveways, walkways & pool decks",
+    tagline: "Garages, patios, driveways & pool decks",
     description:
-      "Protect, restore, and elevate concrete inside and out with sealers, stains, resurfacing, and exterior coating systems built for Inland Northwest freeze-thaw seasons.",
+      "Protect, restore, and elevate concrete inside and out — garage floor systems, sealers, stains, resurfacing, and exterior coatings built for Inland Northwest freeze-thaw seasons.",
     href: "/concrete-coatings",
     image: "hub-concrete",
     services: [
+      {
+        subtitle: "Residential Performance",
+        title: "Garage Floor Coatings",
+        description:
+          "Garage floor coatings designed to create a cleaner, better-protected, and more finished space for everyday use.",
+        href: "/garage-floor-coatings",
+        image: "garage-floor-coatings-1",
+      },
       {
         subtitle: "Refined Surface Finish",
         title: "Concrete Polishing & Sealing",
@@ -109,9 +121,9 @@ export const coreCategories: CoreCategory[] = [
     key: "epoxy",
     title: "Epoxy Floors & Countertops",
     shortTitle: "Epoxy",
-    tagline: "Garages, countertops & decorative floors",
+    tagline: "Countertops, decorative & metallic floors",
     description:
-      "Seamless, high-performance epoxy systems — from flake garage floors to metallic statement floors and custom stone-look countertops.",
+      "Seamless, high-performance epoxy systems — from custom stone-look countertops to metallic statement floors, flake floors, and seamless showers.",
     href: "/epoxy",
     image: "hub-epoxy",
     services: [
@@ -122,14 +134,7 @@ export const coreCategories: CoreCategory[] = [
           "Custom epoxy countertops with stone-inspired movement, rich depth, and a refined finish designed to elevate kitchens, baths, bars, and feature spaces.",
         href: "/epoxy-countertops",
         image: "epoxy-countertops-1",
-      },
-      {
-        subtitle: "Residential Performance",
-        title: "Garage Floor Coatings",
-        description:
-          "Garage floor coatings designed to create a cleaner, better-protected, and more finished space for everyday use.",
-        href: "/garage-floor-coatings",
-        image: "garage-floor-coatings-1",
+        formOptions: ["Epoxy Countertop Refinishing & Resurfacing", "Custom Epoxy Countertops"],
       },
       {
         subtitle: "Durable Texture System",
@@ -177,51 +182,33 @@ export const coreCategories: CoreCategory[] = [
     key: "painting",
     title: "Painting",
     shortTitle: "Painting",
-    tagline: "Interior, exterior, cabinets & fences",
+    tagline: "Residential & commercial",
     description:
       "Professional interior and exterior painting with the same prep-first standards we bring to every coating — clean lines, durable finishes, and a respectful crew.",
     href: "/painting",
     image: "hub-painting",
     services: [
       {
-        subtitle: "Residential Interiors",
-        title: "Interior Painting",
+        subtitle: "Homes & Homeowners",
+        title: "Residential Painting",
         description:
-          "Walls, ceilings, trim, and doors finished with careful prep, crisp cut lines, and durable washable paints.",
-        href: "/painting#interior",
-        image: "painting-interior",
+          "Interior and exterior house painting, cabinet painting, and deck & fence staining — careful prep, clean lines, and a crew that respects your home.",
+        href: "/residential-painting",
+        image: "painting-residential",
+        formOptions: ["Interior Painting", "Exterior Painting", "Cabinet Painting", "Deck & Fence Staining"],
       },
       {
-        subtitle: "Curb Appeal",
-        title: "Exterior Painting",
-        description:
-          "Siding, trim, soffits, and fascia prepared and painted to stand up to Inland Northwest sun, snow, and temperature swings.",
-        href: "/painting#exterior",
-        image: "painting-exterior",
-      },
-      {
-        subtitle: "Kitchen Refresh",
-        title: "Cabinet Painting",
-        description:
-          "A factory-smooth cabinet finish that updates a kitchen or bath at a fraction of the cost of replacement.",
-        href: "/painting#cabinets",
-        image: "painting-cabinets",
-      },
-      {
-        subtitle: "Outdoor Wood",
-        title: "Deck & Fence Staining",
-        description:
-          "Cleaning, brightening, and staining for decks and fences to restore color and protect against weathering.",
-        href: "/painting#deck-fence",
-        image: "painting-deck-fence",
-      },
-      {
-        subtitle: "Business Spaces",
+        subtitle: "Businesses & Properties",
         title: "Commercial Painting",
         description:
-          "Offices, retail, and multi-unit properties painted on a schedule that keeps your business running.",
-        href: "/painting#commercial",
+          "Offices, retail, multi-unit properties, and shops painted on a schedule that keeps your business running — evenings and weekends available.",
+        href: "/commercial-painting",
         image: "painting-commercial",
+        formOptions: [
+          "Commercial Painting – Offices & Retail",
+          "Commercial Painting – Multi-Unit & Rentals",
+          "Commercial Painting – Shops & Warehouses",
+        ],
       },
     ],
   },
@@ -234,6 +221,7 @@ export const coreCategories: CoreCategory[] = [
       "A spray-applied treatment that restores flexibility to aging asphalt shingles, helping your existing roof last longer and delaying the cost of replacement.",
     href: "/roof-rejuvenation",
     image: "hub-roof",
+    formOptions: ["Roof Rejuvenation / Roof Assessment"],
     services: [
       {
         subtitle: "Step One",
@@ -265,4 +253,14 @@ export const coreCategories: CoreCategory[] = [
 
 export function getCategory(key: CoreCategory["key"]): CoreCategory {
   return coreCategories.find((c) => c.key === key)!;
+}
+
+/** Grouped options for the estimate form's project-type dropdown, generated from the catalog above. */
+export function estimateOptionGroups(): { label: string; options: string[] }[] {
+  return coreCategories.flatMap((c) =>
+    // Painting is split into Residential and Commercial groups
+    c.key === "painting"
+      ? c.services.map((svc) => ({ label: svc.title, options: svc.formOptions ?? [svc.title] }))
+      : [{ label: c.title, options: c.formOptions ?? c.services.flatMap((svc) => svc.formOptions ?? [svc.title]) }]
+  );
 }

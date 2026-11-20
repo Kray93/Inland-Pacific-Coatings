@@ -3,15 +3,19 @@ import Link from "next/link";
 import { CoreServiceTiles } from "./components/CoreServiceTiles";
 import { PhotoGallery } from "./components/Photo";
 import { ServiceCards } from "./components/ServiceCards";
-import { getCategory } from "./lib/services";
+import { coreCategories } from "./lib/services";
 
-const signatureServices = [
-  ...getCategory("epoxy").services.slice(0, 2),
-  getCategory("concrete").services[1],
-  getCategory("painting").services[1],
-  getCategory("epoxy").services[5],
-  getCategory("roof").services[2],
+const featuredHrefs = [
+  "/epoxy-countertops",
+  "/garage-floor-coatings",
+  "/outdoor-concrete-coatings",
+  "/residential-painting",
+  "/hardwood-overlay-floors",
+  "/roof-rejuvenation#benefits",
 ];
+const signatureServices = featuredHrefs.map(
+  (href) => coreCategories.flatMap((c) => c.services).find((s) => s.href === href)!
+);
 
 const coreValues = [
   {

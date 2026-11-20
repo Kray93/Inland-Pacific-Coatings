@@ -14,8 +14,8 @@
     },
     "hub-epoxy": {
       "category": "epoxy",
-      "label": "High-gloss epoxy garage floor",
-      "alt": "High-gloss epoxy garage floor",
+      "label": "Metallic epoxy statement floor",
+      "alt": "Metallic epoxy statement floor",
       "src": null
     },
     "hub-painting": {
@@ -406,6 +406,36 @@
       "category": "roof",
       "label": "Roof inspection & assessment",
       "alt": "Roof inspection & assessment",
+      "src": null
+    },
+    "painting-residential": {
+      "category": "painting",
+      "label": "Freshly painted family home",
+      "alt": "Freshly painted family home",
+      "src": null
+    },
+    "painting-commercial-retail": {
+      "category": "painting",
+      "label": "Painted retail storefront",
+      "alt": "Painted retail storefront",
+      "src": null
+    },
+    "painting-commercial-multifamily": {
+      "category": "painting",
+      "label": "Repainted apartment building",
+      "alt": "Repainted apartment building",
+      "src": null
+    },
+    "painting-commercial-warehouse": {
+      "category": "painting",
+      "label": "Painted shop & warehouse interior",
+      "alt": "Painted shop & warehouse interior",
+      "src": null
+    },
+    "painting-commercial-afterhours": {
+      "category": "painting",
+      "label": "After-hours office repaint",
+      "alt": "After-hours office repaint",
       "src": null
     }
   }
