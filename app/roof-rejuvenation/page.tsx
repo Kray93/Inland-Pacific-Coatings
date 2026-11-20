@@ -10,7 +10,7 @@ import { Faq, ProductsUsed } from "../components/SeoBlocks";
 export const metadata: Metadata = {
   title: "Roof Rejuvenation in Coeur d'Alene & Spokane",
   description:
-    "Soy-based HydraSoy roof rejuvenation for asphalt shingle roofs in Coeur d'Alene, Spokane, and the Inland Northwest. Restore aging shingles and delay the cost of roof replacement.",
+    "Soy-based roof rejuvenation for asphalt shingle roofs in Coeur d'Alene, Spokane, and the Inland Northwest. Restore aging shingles and delay the cost of roof replacement.",
   alternates: { canonical: "/roof-rejuvenation" },
 };
 
@@ -33,7 +33,7 @@ const benefits = [
 const faqs = [
   {
     q: "What is roof rejuvenation?",
-    a: "Roof rejuvenation is a spray-applied treatment for asphalt shingle roofs. We use HydraSoy, a soy-based formula that absorbs into the shingles to help replace the oils lost to sun, heat, and weather, restoring flexibility so the roof keeps protecting your home longer.",
+    a: "Roof rejuvenation is a spray-applied treatment for asphalt shingle roofs. We use a soy-based formula that absorbs into the shingles to help replace the oils lost to sun, heat, and weather, restoring flexibility so the roof keeps protecting your home longer.",
   },
   {
     q: "Is my roof a candidate?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "How much life does roof rejuvenation add?",
-    a: "HydraSoy reports an average of about five additional years per treatment, with up to three treatments over a roof's lifespan. Actual results depend on your roof's age and condition, and we'll give you a realistic expectation after the assessment.",
+    a: "The manufacturer of our treatment reports an average of about five additional years per treatment, with up to three treatments over a roof's lifespan. Actual results depend on your roof's age and condition, and we'll give you a realistic expectation after the assessment.",
   },
   {
     q: "How long does it take?",
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Is it safe for my landscaping and pets?",
-    a: "HydraSoy is a soy-based product. We still protect plants, siding, windows, and walkways during application and follow the manufacturer's guidance, and we'll walk you through the details during your estimate.",
+    a: "Our treatment is soy-based. We still protect plants, siding, windows, and walkways during application and follow the manufacturer's guidance, and we'll walk you through the details during your estimate.",
   },
   {
     q: "Is roof rejuvenation worth it compared to a new roof?",
@@ -76,7 +76,7 @@ export default function RoofRejuvenationPage() {
             </p>
             <p>
               Roof rejuvenation is a spray-applied treatment that soaks into the shingles to help replenish those
-              oils. We use HydraSoy, a soy-based formula that absorbs into the asphalt layer of each shingle — restoring flexibility, helping granules stay put, and slowing the aging process so your roof keeps
+              oils. We use a soy-based formula that absorbs into the asphalt layer of each shingle — restoring flexibility, helping granules stay put, and slowing the aging process so your roof keeps
               protecting your home longer.
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function RoofRejuvenationPage() {
         ids={["roof-home", "roof-after", "roof-inspection", "roof-closeup", "roof-application", "roof-before"]}
       />
 
-      <ProductsUsed brand={brands.hydrasoy} heading="Powered by HydraSoy soy-based rejuvenation." className="alt-section" />
+      <ProductsUsed brand={brands.roofTreatment} heading="A soy-based treatment for asphalt shingles." className="alt-section" />
 
       <Faq items={faqs} heading="Roof rejuvenation questions." className="" />
 

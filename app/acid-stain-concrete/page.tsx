@@ -8,7 +8,7 @@ import { servicePhotos } from "../lib/photos";
 export const metadata: Metadata = {
   title: "Acid Stain Concrete in Coeur d'Alene & Spokane",
   description:
-    "Acid-stained concrete floors and patios using Direct Colors EverStain and DecoGel acid stains in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Acid-stained concrete floors and patios using professional metallic-salt acid stains in Coeur d'Alene, Spokane, and the Inland Northwest.",
   alternates: { canonical: "/acid-stain-concrete" },
 };
 
@@ -23,11 +23,11 @@ const faqs: FaqItem[] = [
   },
   {
     q: "What acid stain do you use?",
-    a: "We use Direct Colors EverStain, a water-based metallic-salt acid stain, and DecoGel gel acid stain for walls and vertical concrete. Each job is finished with a matched Direct Colors sealer.",
+    a: "We use a professional water-based, metallic-salt acid stain, plus a gel acid stain for walls and vertical concrete. Each job is finished with a matched sealer from the same system.",
   },
   {
     q: "Can acid stain be used outdoors?",
-    a: "Yes. Acid stain works on patios, porches, and walkways as well as interior floors. Exterior concrete gets a sealer suited to outdoor exposure \u2014 Direct Colors recommends solvent-based EasySeal outdoors and low-odor AcquaSeal indoors.",
+    a: "Yes. Acid stain works on patios, porches, and walkways as well as interior floors. Exterior concrete gets a sealer suited to outdoor exposure \u2014 we typically use a solvent-based acrylic sealer outdoors and a low-odor water-based sealer indoors.",
   },
   {
     q: "How do I maintain an acid-stained floor?",
@@ -145,7 +145,7 @@ export default function AcidStainConcretePage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.directColors} heading="Direct Colors EverStain acid stain & sealers." className="alt-section" />
+      <ProductsUsed brand={brands.stainAndSeal} heading="Professional acid stains & matched sealers." className="alt-section" />
 
       <Faq items={faqs} className="" />
 

@@ -8,7 +8,7 @@ import { servicePhotos } from "../lib/photos";
 export const metadata: Metadata = {
   title: "Metallic Epoxy Floors in Coeur d'Alene & Spokane",
   description:
-    "Metallic epoxy floors installed with Leggari epoxy systems \u2014 deep, reflective, one-of-a-kind floors in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Metallic epoxy floors installed with professional metallic epoxy systems \u2014 deep, reflective, one-of-a-kind floors in Coeur d'Alene, Spokane, and the Inland Northwest.",
   alternates: { canonical: "/metallic-epoxy-floors" },
 };
 
@@ -136,7 +136,7 @@ export default function MetallicEpoxyFloorsPage() {
   </div>
 </section>
 
-      <ProductsUsed brand={brands.leggari} heading="Leggari metallic epoxy floor systems." className="alt-section" />
+      <ProductsUsed brand={brands.metallicEpoxy} heading="Professional metallic epoxy floor systems." className="alt-section" />
 
       <section className="section">
         <div className="container article">

@@ -8,7 +8,7 @@ import { servicePhotos } from "../lib/photos";
 export const metadata: Metadata = {
   title: "Epoxy Countertops in Coeur d'Alene & Spokane",
   description:
-    "Custom epoxy countertop refinishing and metallic, marble-look countertops using Leggari epoxy systems in Coeur d'Alene, Spokane, and the Inland Northwest.",
+    "Custom epoxy countertop refinishing and metallic, marble-look countertops using professional metallic epoxy systems in Coeur d'Alene, Spokane, and the Inland Northwest.",
   alternates: { canonical: "/epoxy-countertops" },
 };
 
@@ -19,7 +19,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "What products do you use for epoxy countertops?",
-    a: "We install Leggari metallic epoxy countertop systems \u2014 primer, epoxy, and metallic pigments \u2014 finished with a protective top coat for added durability and scratch resistance.",
+    a: "We install a professional metallic epoxy countertop system \u2014 primer, epoxy, and metallic pigments \u2014 finished with a protective top coat for added durability and scratch resistance.",
   },
   {
     q: "How much do epoxy countertops cost compared to replacement?",
@@ -226,7 +226,7 @@ export default function EpoxyCountertopsPage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.leggari} heading="Leggari metallic epoxy countertop systems." className="alt-section" />
+      <ProductsUsed brand={brands.metallicEpoxy} heading="Professional metallic epoxy countertop systems." className="alt-section" />
 
       <Faq items={faqs} className="" />
 

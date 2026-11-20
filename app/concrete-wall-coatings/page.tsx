@@ -128,7 +128,7 @@ export default function ConcreteWallCoatingsPage() {
   </div>
 </section>
 
-      <ProductsUsed brand={brands.directColors} heading="Stained vertical concrete with Direct Colors DecoGel." className="alt-section" />
+      <ProductsUsed brand={brands.stainAndSeal} heading="Gel acid stains for vertical concrete." className="alt-section" />
 
       <section className="section">
         <div className="container article">

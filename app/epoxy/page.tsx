@@ -72,7 +72,7 @@ export default function EpoxyPage() {
         </div>
       </section>
 
-      <ProductsUsed brand={brands.leggari} heading="Leggari metallic epoxy systems." />
+      <ProductsUsed brand={brands.metallicEpoxy} heading="Professional metallic epoxy systems." />
 
       <CtaBand />
     </main>
